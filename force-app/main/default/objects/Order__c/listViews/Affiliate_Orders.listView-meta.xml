@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Affiliate_Orders</fullName>
+    <columns>NAME</columns>
+    <columns>Account__c</columns>
+    <columns>Affiliate_Id__c</columns>
+    <columns>Date__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Affiliate_Id__c</field>
+        <operation>notEqual</operation>
+    </filters>
+    <label>Affiliate Orders</label>
+</ListView>

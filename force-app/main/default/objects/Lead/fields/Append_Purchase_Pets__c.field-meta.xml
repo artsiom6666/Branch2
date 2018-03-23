@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Append_Purchase_Pets__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Purchases pet related products</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Purchases pet related products</inlineHelpText>
+    <label>Pet Product Buyer</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>Checkbox</type>
+</CustomField>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Email_Valid__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Identifies invalid email formats</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Identifies invalid email formats</inlineHelpText>
+    <label>Email Syntax is Valid</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableChangeDataCapture>false</enableChangeDataCapture>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>false</enableHistory>
+    <enableReports>false</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <externalSharingModel>ReadWrite</externalSharingModel>
+    <fields>
+        <fullName>Auto_Apply__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Auto Apply</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Business_Rules__c</fullName>
+        <externalId>false</externalId>
+        <label>Business Rules if Any</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Cart Value &gt; $</fullName>
+                    <default>false</default>
+                    <label>Cart Value &gt; $</label>
+                </value>
+                <value>
+                    <fullName>First Customer Only</fullName>
+                    <default>false</default>
+                    <label>First Customer Only</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Cart_Over_Value__c</fullName>
+        <defaultValue>0</defaultValue>
+        <externalId>false</externalId>
+        <label>Cart Over Value</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Coupon_Code__c</fullName>
+        <externalId>false</externalId>
+        <label>Coupon Code</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Created_Date__c</fullName>
+        <defaultValue>now()</defaultValue>
+        <externalId>false</externalId>
+        <label>Created Date</label>
+        <required>true</required>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>Description__c</fullName>
+        <externalId>false</externalId>
+        <label>Description</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Discount_Amount__c</fullName>
+        <description>The discount amount in dollars or %</description>
+        <externalId>false</externalId>
+        <label>Amount Off</label>
+        <precision>4</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Discount_Type__c</fullName>
+        <externalId>false</externalId>
+        <label>Discount Type</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Discount %</fullName>
+                    <default>false</default>
+                    <label>Discount %</label>
+                </value>
+                <value>
+                    <fullName>$ Off</fullName>
+                    <default>true</default>
+                    <label>$ Off</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>End_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>End Date</label>
+        <required>true</required>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>New_Customer__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>New Customer</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Product__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Product</label>
+        <referenceTo>Product2</referenceTo>
+        <relationshipLabel>Coupons</relationshipLabel>
+        <relationshipName>Coupons</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Start_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Start Date</label>
+        <required>true</required>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Status__c</fullName>
+        <externalId>false</externalId>
+        <label>Status</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Draft</fullName>
+                    <default>true</default>
+                    <label>Draft</label>
+                </value>
+                <value>
+                    <fullName>Active</fullName>
+                    <default>false</default>
+                    <label>Active</label>
+                </value>
+                <value>
+                    <fullName>InActive</fullName>
+                    <default>false</default>
+                    <label>InActive</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Uses_Limit_Value__c</fullName>
+        <externalId>false</externalId>
+        <label>Uses Limit Value</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Uses_Limit__c</fullName>
+        <externalId>false</externalId>
+        <label>Uses Limit</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Overall</fullName>
+                    <default>true</default>
+                    <label>Overall</label>
+                </value>
+                <value>
+                    <fullName>Per Customer</fullName>
+                    <default>false</default>
+                    <label>Per Customer</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Visible_Name__c</fullName>
+        <externalId>false</externalId>
+        <label>Visible Name</label>
+        <length>25</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <label>Coupon</label>
+    <listViews>
+        <fullName>All</fullName>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+    </listViews>
+    <nameField>
+        <label>Coupon Name</label>
+        <type>Text</type>
+    </nameField>
+    <pluralLabel>Coupons</pluralLabel>
+    <searchLayouts/>
+    <sharingModel>ReadWrite</sharingModel>
+    <validationRules>
+        <fullName>Auto_Apply_Check</fullName>
+        <active>true</active>
+        <errorConditionFormula>Auto_Apply__c = TRUE 
+&amp;&amp; Coupon_Code__c != NULL</errorConditionFormula>
+        <errorDisplayField>Coupon_Code__c</errorDisplayField>
+        <errorMessage>&quot;Coupon Code&quot; must be empty for Auto-Apply coupon.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Check_Amount_Off</fullName>
+        <active>true</active>
+        <errorConditionFormula>(ISPICKVAL( Discount_Type__c , &apos;Discount %&apos;)|| ISPICKVAL( Discount_Type__c , &apos;$ Off&apos;)) 
+&amp;&amp; ( Discount_Amount__c = 0 || ISNULL(Discount_Amount__c) = TRUE)</errorConditionFormula>
+        <errorDisplayField>Discount_Amount__c</errorDisplayField>
+        <errorMessage>Amount Off can&apos;t be NULL</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Check_End_Date</fullName>
+        <active>true</active>
+        <errorConditionFormula>End_Date__c &lt;= Start_Date__c</errorConditionFormula>
+        <errorDisplayField>End_Date__c</errorDisplayField>
+        <errorMessage>End Date must be more than Start Date</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Check_Uses_Limit</fullName>
+        <active>true</active>
+        <errorConditionFormula>( ISPICKVAL( Uses_Limit__c , &apos;Overall&apos; ) ||  ISPICKVAL( Uses_Limit__c , &apos;Per Customer&apos; ) ) 
+&amp;&amp; (  Uses_Limit_Value__c = 0 || ISNULL( Uses_Limit_Value__c ) = TRUE )</errorConditionFormula>
+        <errorDisplayField>Uses_Limit_Value__c</errorDisplayField>
+        <errorMessage>Uses Limit Value can&apos;t be NULL</errorMessage>
+    </validationRules>
+    <visibility>Public</visibility>
+</CustomObject>

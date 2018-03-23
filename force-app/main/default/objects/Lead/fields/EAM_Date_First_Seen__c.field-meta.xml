@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>EAM_Date_First_Seen__c</fullName>
+    <description>Dating back to 2006, knowing the date (YYYY-MM-DD) we first saw an email
+address can drive fraud prevention algorithms by highlighting addresses that
+are newly created or with limited use.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Dating back to 2006, knowing the date (YYYY-MM-DD) we first saw an email
+address can drive fraud prevention algorithms by highlighting addresses that
+are newly created or with limited use.</inlineHelpText>
+    <label>Date Email First Seen</label>
+    <length>255</length>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

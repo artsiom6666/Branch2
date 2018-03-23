@@ -1,0 +1,410 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>false</enableBulkApi>
+    <enableChangeDataCapture>false</enableChangeDataCapture>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>false</enableHistory>
+    <enableReports>false</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>false</enableSharing>
+    <enableStreamingApi>false</enableStreamingApi>
+    <externalSharingModel>ReadWrite</externalSharingModel>
+    <fields>
+        <fullName>Active__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Active</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Autoplay__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Autoplay</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Average_Order_Value__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF(Total_Revenue__c == 0 || Total_Transactions__c == 0, 0, Total_Revenue__c / Total_Transactions__c)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Average Order Value</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Commission_Earned__c</fullName>
+        <externalId>false</externalId>
+        <label>Commission Earned</label>
+        <summarizedField>Affiliate_Offer__c.Commissions_Earned__c</summarizedField>
+        <summaryForeignKey>Affiliate_Offer__c.Offer__c</summaryForeignKey>
+        <summaryOperation>sum</summaryOperation>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>Commission_Paid_Out__c</fullName>
+        <externalId>false</externalId>
+        <label>Commission Paid Out</label>
+        <summarizedField>Affiliate_Offer__c.Commissions_Paid__c</summarizedField>
+        <summaryForeignKey>Affiliate_Offer__c.Offer__c</summaryForeignKey>
+        <summaryOperation>sum</summaryOperation>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>Commission_Payable__c</fullName>
+        <externalId>false</externalId>
+        <label>Commission Payable</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Commissions_Available_for_Withdrawal__c</fullName>
+        <externalId>false</externalId>
+        <label>Commissions Available for Withdrawal</label>
+        <summarizedField>Affiliate_Offer__c.Commissions_Earned_for_Withdrawal__c</summarizedField>
+        <summaryForeignKey>Affiliate_Offer__c.Offer__c</summaryForeignKey>
+        <summaryOperation>sum</summaryOperation>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>Commissions_Not_Passed_Refund_Period__c</fullName>
+        <externalId>false</externalId>
+        <label>Commissions Not Passed Refund Period</label>
+        <summarizedField>Affiliate_Offer__c.Commission_Not_Passed_Refund_Period__c</summarizedField>
+        <summaryForeignKey>Affiliate_Offer__c.Offer__c</summaryForeignKey>
+        <summaryOperation>sum</summaryOperation>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>Commissions_Paid_And_Refunded__c</fullName>
+        <externalId>false</externalId>
+        <label>Commissions Paid and Refunded</label>
+        <summarizedField>Affiliate_Offer__c.Commissions_Paid_And_Refunded__c</summarizedField>
+        <summaryForeignKey>Affiliate_Offer__c.Offer__c</summaryForeignKey>
+        <summaryOperation>sum</summaryOperation>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>Commissions_Pending_Withdrawal__c</fullName>
+        <externalId>false</externalId>
+        <label>Commissions Pending Withdrawal</label>
+        <summarizedField>Affiliate_Offer__c.Commissions_Pending_Withdrawal__c</summarizedField>
+        <summaryForeignKey>Affiliate_Offer__c.Offer__c</summaryForeignKey>
+        <summaryOperation>sum</summaryOperation>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>Commissions_Refunded__c</fullName>
+        <externalId>false</externalId>
+        <label>Commissions Refunded</label>
+        <summarizedField>Affiliate_Offer__c.Commissions_Refunded__c</summarizedField>
+        <summaryForeignKey>Affiliate_Offer__c.Offer__c</summaryForeignKey>
+        <summaryOperation>sum</summaryOperation>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>First_Sales__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>First Sales</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Fixed_Amount__c</fullName>
+        <externalId>false</externalId>
+        <label>Fixed Amount</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Offer_Description__c</fullName>
+        <externalId>false</externalId>
+        <label>Offer Description</label>
+        <length>5000</length>
+        <trackTrending>false</trackTrending>
+        <type>Html</type>
+        <visibleLines>25</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Offer_Headline__c</fullName>
+        <externalId>false</externalId>
+        <label>Offer Headline</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Offer_Name__c</fullName>
+        <externalId>false</externalId>
+        <label>Offer Name</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Offer_Subheadline__c</fullName>
+        <externalId>false</externalId>
+        <label>Offer Subheadline</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>OrderForm__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>OrderForm</label>
+        <referenceTo>OrderForm__c</referenceTo>
+        <relationshipLabel>Offers</relationshipLabel>
+        <relationshipName>Offers</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Percent_Of_Price__c</fullName>
+        <externalId>false</externalId>
+        <label>Percent Of Price</label>
+        <precision>5</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>Popup__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Popup</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Product__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Product</label>
+        <referenceTo>Product2</referenceTo>
+        <relationshipLabel>Offers</relationshipLabel>
+        <relationshipName>Offers</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Recalculate_Commission_Payable__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Recalculate Commission Payable</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Refund_Transactions__c</fullName>
+        <externalId>false</externalId>
+        <label>Refund Transactions</label>
+        <summarizedField>Affiliate_Offer__c.Refund_Transactions__c</summarizedField>
+        <summaryForeignKey>Affiliate_Offer__c.Offer__c</summaryForeignKey>
+        <summaryOperation>sum</summaryOperation>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>Store_Cookie__c</fullName>
+        <externalId>false</externalId>
+        <label>Store Cookie (In Days)</label>
+        <precision>3</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Subscription__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Subscription</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Total_Commissions__c</fullName>
+        <externalId>false</externalId>
+        <label>Total Commissions</label>
+        <summarizedField>Affiliate_Offer__c.Total_Commissions__c</summarizedField>
+        <summaryForeignKey>Affiliate_Offer__c.Offer__c</summaryForeignKey>
+        <summaryOperation>sum</summaryOperation>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>Total_Revenue__c</fullName>
+        <externalId>false</externalId>
+        <label>Total Revenue</label>
+        <summarizedField>Affiliate_Offer__c.Total_Revenue__c</summarizedField>
+        <summaryForeignKey>Affiliate_Offer__c.Offer__c</summaryForeignKey>
+        <summaryOperation>sum</summaryOperation>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>Total_Transactions__c</fullName>
+        <externalId>false</externalId>
+        <label>Total Transactions</label>
+        <summarizedField>Affiliate_Offer__c.Total_Transactions__c</summarizedField>
+        <summaryForeignKey>Affiliate_Offer__c.Offer__c</summaryForeignKey>
+        <summaryOperation>sum</summaryOperation>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>Type__c</fullName>
+        <externalId>false</externalId>
+        <formula>RecordType.Name</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Type</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <label>Offer</label>
+    <listViews>
+        <fullName>All</fullName>
+        <columns>NAME</columns>
+        <columns>Offer_Name__c</columns>
+        <columns>Commission_Payable__c</columns>
+        <columns>Active__c</columns>
+        <columns>Product__c</columns>
+        <columns>OrderForm__c</columns>
+        <columns>RECORDTYPE</columns>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+    </listViews>
+    <nameField>
+        <displayFormat>OFR-{000}</displayFormat>
+        <label>Offer Id</label>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Offers</pluralLabel>
+    <recordTypes>
+        <fullName>Cart</fullName>
+        <active>true</active>
+        <label>Cart</label>
+    </recordTypes>
+    <recordTypes>
+        <fullName>Funnel</fullName>
+        <active>true</active>
+        <label>Funnel</label>
+    </recordTypes>
+    <searchLayouts/>
+    <sharingModel>ReadWrite</sharingModel>
+    <validationRules>
+        <fullName>Type_of_Commission</fullName>
+        <active>true</active>
+        <errorConditionFormula>IF (!ISNULL(Percent_Of_Price__c) &amp;&amp; !ISNULL(Fixed_Amount__c), TRUE, FALSE)</errorConditionFormula>
+        <errorMessage>You can use either a &quot;Percent Of Price&quot; or a &quot;Fixed Amount&quot;.</errorMessage>
+    </validationRules>
+    <visibility>Public</visibility>
+    <webLinks>
+        <fullName>Recalculate_Commissions_Payable</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <linkType>javascript</linkType>
+        <masterLabel>Recalculate Commissions Payable</masterLabel>
+        <openType>onClickJavaScript</openType>
+        <protected>false</protected>
+        <url>{!REQUIRESCRIPT(&quot;/soap/ajax/30.0/connection.js&quot;)} 
+{!REQUIRESCRIPT(&quot;/soap/ajax/30.0/apex.js&quot;)}
+
+var query = &quot;select Id, TouchCRBase__Recalculate_Commission_Payable__c from TouchCRBase__Offer__c where Id = &apos;{!Offer__c.Id}&apos; limit 1&quot;; 
+var result = sforce.connection.query(query); 
+var records = result.getArray(&quot;records&quot;); 
+var myObj = records[0];
+myObj.TouchCRBase__Recalculate_Commission_Payable__c = &apos;TRUE&apos;;
+var results = sforce.connection.update([myObj]);
+
+var query2 = &quot;select Id, TouchCRBase__Recalculate_Commission_Payable__c from TouchCRBase__Offer_Commission__c where TouchCRBase__Offer__c = &apos;{!Offer__c.Id}&apos; limit 10&quot;; 
+var result2 = sforce.connection.query(query2); 
+var records2 = result2.getArray(&quot;records&quot;); 
+for (var i = 0; i &lt;records2.length; i++ ) {
+    records2[i].TouchCRBase__Recalculate_Commission_Payable__c = &apos;TRUE&apos;;
+}
+
+var results2 = sforce.connection.update(records2);
+
+
+
+window.location.reload(true);</url>
+    </webLinks>
+</CustomObject>

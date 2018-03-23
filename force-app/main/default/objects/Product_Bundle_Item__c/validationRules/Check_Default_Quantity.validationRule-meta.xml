@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Check_Default_Quantity</fullName>
+    <active>true</active>
+    <errorConditionFormula>IF( Default_Quantity__c == 0 || ISNULL(Default_Quantity__c) == TRUE, TRUE, FALSE )</errorConditionFormula>
+    <errorDisplayField>Default_Quantity__c</errorDisplayField>
+    <errorMessage>Please enter the Default Quantity.</errorMessage>
+</ValidationRule>

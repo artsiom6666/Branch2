@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Push_Notification_Topic__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <externalId>false</externalId>
+    <label>Push Notification Topic</label>
+    <referenceTo>Push_Notification_Topic__c</referenceTo>
+    <relationshipLabel>Push_Notification_Topic_Junction</relationshipLabel>
+    <relationshipName>Push_Notification_Topic_Junction</relationshipName>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

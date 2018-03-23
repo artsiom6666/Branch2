@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>RFM_CSAT__c</fullName>
+    <externalId>false</externalId>
+    <formula>CASE(
+    Recency_Score__c,
+    5, "ACTIVE CUSTOMER",
+    4, "DISENGAGING CUSTOMER",
+    3, "AT RISK CUSTOMER",
+    2, "CHURNING CUSTOMER",
+    1, "LOST CUSTOMER",
+    ""
+)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Customer Survival Analysis Type</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Append_Interest_Health_Wellness__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Interest in healthy lifestyle; purchases healthy lifestyle products</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Interest in healthy lifestyle; purchases healthy lifestyle products</inlineHelpText>
+    <label>Known Interest in Health &amp; Wellness</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>Checkbox</type>
+</CustomField>

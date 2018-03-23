@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Recognized_Visit_Device__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <externalId>false</externalId>
+    <label>Recognized Visit Device</label>
+    <referenceTo>Recognized_Visit_Device__c</referenceTo>
+    <relationshipLabel>Recognized Visits</relationshipLabel>
+    <relationshipName>Recognized_Visits</relationshipName>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

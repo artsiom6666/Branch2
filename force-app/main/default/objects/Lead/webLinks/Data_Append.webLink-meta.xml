@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Data_Append</fullName>
+    <availability>online</availability>
+    <displayType>button</displayType>
+    <linkType>page</linkType>
+    <masterLabel>Data Append</masterLabel>
+    <openType>replace</openType>
+    <page>LeadToDataAppend</page>
+    <protected>false</protected>
+</WebLink>

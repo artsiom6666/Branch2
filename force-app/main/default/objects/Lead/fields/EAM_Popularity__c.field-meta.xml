@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>EAM_Popularity__c</fullName>
+    <defaultValue>0</defaultValue>
+    <description>How many other companies are seeing that email address?
+The popularity metric calculates the number of sources from whom
+TouchCR has seen the email within the past 12 months from
+no partners or sources (0) to most popular (10).</description>
+    <externalId>false</externalId>
+    <inlineHelpText>How many other companies are seeing that email address?
+The popularity metric calculates the number of sources from whom
+TouchCR has seen the email within the past 12 months from
+no partners or sources (0) to most popular (10).</inlineHelpText>
+    <label>Email Popularity</label>
+    <precision>2</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

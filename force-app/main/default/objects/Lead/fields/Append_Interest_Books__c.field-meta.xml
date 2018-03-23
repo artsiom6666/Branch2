@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Append_Interest_Books__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Purchases books; Interest in reading books</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Purchases books; Interest in reading books</inlineHelpText>
+    <label>Known Interest in Books</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>Checkbox</type>
+</CustomField>

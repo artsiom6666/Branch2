@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Append_Purchase_Baby_Product_Buyer__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Has bought a baby product in the past 18 months</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Has bought a baby product in the past 18 months</inlineHelpText>
+    <label>Baby Product Buyer</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>Checkbox</type>
+</CustomField>

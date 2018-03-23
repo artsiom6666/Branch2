@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customSettingsType>List</customSettingsType>
+    <description>Specifiying payment agent which will be used to work with Stripe connect.</description>
+    <enableFeeds>false</enableFeeds>
+    <label>Stripe Connect</label>
+    <visibility>Public</visibility>
+</CustomObject>

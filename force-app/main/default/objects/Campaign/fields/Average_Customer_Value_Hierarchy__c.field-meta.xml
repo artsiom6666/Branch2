@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Average_Customer_Value_Hierarchy__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(HierarchyNumberOfContacts > 0, Total_Customers_Value_Hierarchy__c / HierarchyNumberOfContacts, null)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Average Customer Value in Hierarchy</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <type>Currency</type>
+</CustomField>

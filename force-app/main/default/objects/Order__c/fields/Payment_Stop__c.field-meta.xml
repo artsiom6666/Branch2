@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Payment_Stop__c</fullName>
+    <externalId>false</externalId>
+    <label>Payment Stop</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Date</fullName>
+                <default>false</default>
+                <label>Date</label>
+            </value>
+            <value>
+                <fullName>Count</fullName>
+                <default>false</default>
+                <label>Count</label>
+            </value>
+            <value>
+                <fullName>Balance Due</fullName>
+                <default>false</default>
+                <label>Balance Due</label>
+            </value>
+            <value>
+                <fullName>Unending</fullName>
+                <default>false</default>
+                <label>Unending</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

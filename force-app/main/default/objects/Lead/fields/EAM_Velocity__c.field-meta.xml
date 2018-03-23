@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>EAM_Velocity__c</fullName>
+    <defaultValue>0</defaultValue>
+    <description>How often has that email address been seen recently? Here we analyze an
+address’ frequency of activity over the past 3 months from inactive (0) to
+most active (10).</description>
+    <externalId>false</externalId>
+    <inlineHelpText>How often has that email address been seen recently? Here we analyze an
+address’ frequency of activity over the past 3 months from inactive (0) to
+most active (10).</inlineHelpText>
+    <label>Email Velocity</label>
+    <precision>2</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

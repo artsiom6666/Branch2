@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Total_CPL__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(AND(NumberOfContacts > 0, NumberOfLeads > 0), ActualCost / (NumberOfContacts + NumberOfLeads), null)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <inlineHelpText>ActualCost / (NumberOfContacts + NumberOfLeads</inlineHelpText>
+    <label>Total CPL</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <type>Currency</type>
+</CustomField>

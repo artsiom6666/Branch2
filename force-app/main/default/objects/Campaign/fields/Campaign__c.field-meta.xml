@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Campaign__c</fullName>
+    <description>Additional information to be placed in UTM_Campaign field</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Additional information to be placed in UTM_Campaign field</inlineHelpText>
+    <label>Campaign Addition</label>
+    <length>80</length>
+    <required>false</required>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

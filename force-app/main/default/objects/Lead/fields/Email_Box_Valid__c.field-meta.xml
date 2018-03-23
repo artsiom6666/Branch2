@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Email_Box_Valid__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Determines whether messages to a mailbox will hard bounce, soft bounce or deliver.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Determines whether messages to a mailbox will hard bounce, soft bounce or deliver.</inlineHelpText>
+    <label>Email Inbox is Valid</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>Checkbox</type>
+</CustomField>

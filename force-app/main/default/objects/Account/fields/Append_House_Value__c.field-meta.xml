@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Append_House_Value__c</fullName>
+    <description>Market value of person’s home. In ranges of $25K and $50K increments. 1k-25k; 25k-50k; 50k-75k; 75k-100k; 100k-150k; 150k-200k; 200k-250k; 250k-300k; 300k-350k; 350k-500k; 500k-1mm; 1mm+</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Market value of person’s home. In ranges of $25K and $50K increments. 1k-25k; 25k-50k; 50k-75k; 75k-100k; 100k-150k; 150k-200k; 200k-250k; 250k-300k; 300k-350k; 350k-500k; 500k-1mm; 1mm+</inlineHelpText>
+    <label>House Market Value</label>
+    <length>255</length>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

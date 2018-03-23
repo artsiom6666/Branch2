@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Append_Purchase_Technology__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Purchases technology</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Purchases technology</inlineHelpText>
+    <label>Technology Buyer</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

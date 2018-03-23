@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Pricebook_Eligibility__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(
+RFM_Score_Number__c > 444, 'Gold',
+ IF(RFM_Score_Number__c &lt;= 444 &amp;&amp; CreatedDate &lt; NOW() - 90, 'Bronze',
+  IF(Wholesaler__c, 'Wholesaler',
+  'Normal'))
+)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Pricebook Eligibility</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

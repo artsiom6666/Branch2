@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Refund_Transactions__c</fullName>
+    <externalId>false</externalId>
+    <label>Refund Transactions</label>
+    <summarizedField>Affiliate_Offer__c.Refund_Transactions__c</summarizedField>
+    <summaryForeignKey>Affiliate_Offer__c.Offer__c</summaryForeignKey>
+    <summaryOperation>sum</summaryOperation>
+    <trackTrending>false</trackTrending>
+    <type>Summary</type>
+</CustomField>

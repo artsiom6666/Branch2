@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Append_House_Income__c</fullName>
+    <description>Income of household by range. 0-15k; 15k-25k; 25k-35k; 35k-50k; 50k-75k; 75k-100k; 100k-125k; 125k-150k; 150k-175k; 175k-200k; 200k-250k; 250k+</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Income of household by range. 0-15k; 15k-25k; 25k-35k; 35k-50k; 50k-75k; 75k-100k; 100k-125k; 125k-150k; 150k-175k; 175k-200k; 200k-250k; 250k+</inlineHelpText>
+    <label>Household Income</label>
+    <length>255</length>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

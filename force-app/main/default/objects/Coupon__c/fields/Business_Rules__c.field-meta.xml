@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Business_Rules__c</fullName>
+    <externalId>false</externalId>
+    <label>Business Rules if Any</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Cart Value > $</fullName>
+                <default>false</default>
+                <label>Cart Value > $</label>
+            </value>
+            <value>
+                <fullName>First Customer Only</fullName>
+                <default>false</default>
+                <label>First Customer Only</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

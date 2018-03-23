@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Check_Uses_Limit</fullName>
+    <active>true</active>
+    <errorConditionFormula>( ISPICKVAL( Uses_Limit__c , 'Overall' ) ||  ISPICKVAL( Uses_Limit__c , 'Per Customer' ) ) 
+&amp;&amp; (  Uses_Limit_Value__c = 0 || ISNULL( Uses_Limit_Value__c ) = TRUE )</errorConditionFormula>
+    <errorDisplayField>Uses_Limit_Value__c</errorDisplayField>
+    <errorMessage>Uses Limit Value can't be NULL</errorMessage>
+</ValidationRule>

@@ -1,0 +1,867 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <fullName>Append_Address_City__c</fullName>
+        <description>City derived from email address</description>
+        <externalId>false</externalId>
+        <inlineHelpText>City derived from email address</inlineHelpText>
+        <label>Appended City</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Append_Address_State__c</fullName>
+        <description>State derived from email address</description>
+        <externalId>false</externalId>
+        <inlineHelpText>State derived from email address</inlineHelpText>
+        <label>Appended State</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Append_Address_Street__c</fullName>
+        <description>Street address derived from email address</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Street address derived from email address</inlineHelpText>
+        <label>Appended Street Address</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Append_Address_ZIp__c</fullName>
+        <description>Zip/Postal Code derived from email address</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Zip/Postal Code derived from email address</inlineHelpText>
+        <label>Appended Zip/Postal Code</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Append_Demo_Age__c</fullName>
+        <description>Age Range. 18-20; 21-24; 25-34; 35-44; 45-54; 55-64; 65+</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Age Range. 18-20; 21-24; 25-34; 35-44; 45-54; 55-64; 65+</inlineHelpText>
+        <label>Age</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Append_Demo_Education__c</fullName>
+        <description>Indicates the highest known level of education the person has completed. Completed High School; Attended College; Completed College; Completed Graduate School; Attended Vocational/Technical</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Indicates the highest known level of education the person has completed. Completed High School; Attended College; Completed College; Completed Graduate School; Attended Vocational/Technical</inlineHelpText>
+        <label>Education Level Attained</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Append_Demo_Gender__c</fullName>
+        <description>Gender of the input individual. Male or Female</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Gender of the input individual. Male or Female</inlineHelpText>
+        <label>Gender</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Append_Demo_Net_Worth__c</fullName>
+        <description>Indicates the net worth of the household. 0-5k, 5k-10k, 10k-25k, 25k-50k, 50k-100k, 100k-250k, 250k-500k, 500k-750k, 750k-1mm, 1mm+</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Indicates the net worth of the household. 0-5k, 5k-10k, 10k-25k, 25k-50k, 50k-100k, 100k-250k, 250k-500k, 500k-750k, 750k-1mm, 1mm+</inlineHelpText>
+        <label>Net Worth of Household</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Append_Demo_Zip__c</fullName>
+        <description>Location-based data by zip code</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Location-based data by zip code</inlineHelpText>
+        <label>Location By Zip Code</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Append_House_Children__c</fullName>
+        <description>Indicates whether there are 1 or more children in the household.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Indicates whether there are 1 or more children in the household.</inlineHelpText>
+        <label>Presence of Children in House</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Append_House_Income__c</fullName>
+        <description>Income of household by range. 0-15k; 15k-25k; 25k-35k; 35k-50k; 50k-75k; 75k-100k; 100k-125k; 125k-150k; 150k-175k; 175k-200k; 200k-250k; 250k+</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Income of household by range. 0-15k; 15k-25k; 25k-35k; 35k-50k; 50k-75k; 75k-100k; 100k-125k; 125k-150k; 150k-175k; 175k-200k; 200k-250k; 250k+</inlineHelpText>
+        <label>Household Income</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Append_House_Length_of_Residence__c</fullName>
+        <description>Number of years spent in the current residence. Reported as number; not range. Less than 1 year; 1 year; 2 years; 3 years; 4 years; 5 years; 6 years; 7 years; 8 years; 9 years; 10 years; 11-15 years; 16 -19 years; 20+ years</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Number of years spent in the current residence. Reported as number; not range. Less than 1 year; 1 year; 2 years; 3 years; 4 years; 5 years; 6 years; 7 years; 8 years; 9 years; 10 years; 11-15 years; 16 -19 years; 20+ years</inlineHelpText>
+        <label>Years at Current Address</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Append_House_Marital_Status__c</fullName>
+        <description>Known marital status of the household. Single or Married</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Known marital status of the household. Single or Married</inlineHelpText>
+        <label>Marital Status</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Append_House_Occupation__c</fullName>
+        <description>Householder occupation type as follows: Blue Collar Worker; Business Owner; Civil Service; Technology; Executive/Upper Management; Health Services; Homemaker; Middle Management; Military Personnel; Nurse; Part Time; Professional; Retired; Secretary; Student; Teacher; White Collar Worker</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Householder occupation type as follows: Blue Collar Worker; Business Owner; Civil Service; Technology; Executive/Upper Management; Health Services; Homemaker; Middle Management; Military Personnel; Nurse; Part Time; Professional; Retired; Secretary; Stude</inlineHelpText>
+        <label>Occupation Type in Household</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Append_House_Owner_Status__c</fullName>
+        <description>Whether the person owns or rents their home.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Whether the person owns or rents their home.</inlineHelpText>
+        <label>Home Owner Status</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Append_House_Value__c</fullName>
+        <description>Market value of person’s home. In ranges of $25K and $50K increments. 1k-25k; 25k-50k; 50k-75k; 75k-100k; 100k-150k; 150k-200k; 200k-250k; 250k-300k; 300k-350k; 350k-500k; 500k-1mm; 1mm+</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Market value of person’s home. In ranges of $25K and $50K increments. 1k-25k; 25k-50k; 50k-75k; 75k-100k; 100k-150k; 150k-200k; 200k-250k; 250k-300k; 300k-350k; 350k-500k; 500k-1mm; 1mm+</inlineHelpText>
+        <label>House Market Value</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Append_Interest_Arts_Craft__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Purchases arts &amp; crafts related products</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Purchases arts &amp; crafts related products</inlineHelpText>
+        <label>Known Interest in Arts &amp; Craft</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Append_Interest_Blogging__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Interest in blogging</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Interest in blogging</inlineHelpText>
+        <label>Known Interest in Blogging</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Append_Interest_Books__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Purchases books; Interest in reading books</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Purchases books; Interest in reading books</inlineHelpText>
+        <label>Known Interest in Books</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Append_Interest_Business__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Interest in business</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Interest in business</inlineHelpText>
+        <label>Known Interest in Business</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Append_Interest_Health_Wellness__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Interest in healthy lifestyle; purchases healthy lifestyle products</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Interest in healthy lifestyle; purchases healthy lifestyle products</inlineHelpText>
+        <label>Known Interest in Health &amp; Wellness</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Append_Interest_News_Current_Affairs__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Purchases subscriptions for news &amp; current events.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Purchases subscriptions for news &amp; current events.</inlineHelpText>
+        <label>Known Interest in News &amp; Current Affairs</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Append_Need_Append__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Append Need Append</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Append_Purchase_Automotive__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Purchases automotive goods</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Purchases automotive goods</inlineHelpText>
+        <label>Automotive Buyer</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Append_Purchase_Baby_Product_Buyer__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Has bought a baby product in the past 18 months</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Has bought a baby product in the past 18 months</inlineHelpText>
+        <label>Baby Product Buyer</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Append_Purchase_Beauty__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Purchases beauty products</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Purchases beauty products</inlineHelpText>
+        <label>Beauty Product Buyer</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Append_Purchase_Charitable_Doner__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Indicates likelihood of being a charitable donor</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Indicates likelihood of being a charitable donor</inlineHelpText>
+        <label>Charitable Doner</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Append_Purchase_Cooking__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Purchases cooking magazines; interest in cooking</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Purchases cooking magazines; interest in cooking</inlineHelpText>
+        <label>Cooking Buyer</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Append_Purchase_Discount_Shopper__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Interested in discounts when buying</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Interested in discounts when buying</inlineHelpText>
+        <label>Discount Shopper</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Append_Purchase_High_End_Brand_Buyer__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Has bought a premium CPG brand in the past 18 months</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Has bought a premium CPG brand in the past 18 months</inlineHelpText>
+        <label>High End Brand Buyer</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Append_Purchase_Home_Garden__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Purchases home &amp; garden products</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Purchases home &amp; garden products</inlineHelpText>
+        <label>Home &amp; Garden Buyer</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Append_Purchase_Home_Improvement__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Purchases home improvement goods</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Purchases home improvement goods</inlineHelpText>
+        <label>Home Improvement Buyer</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Append_Purchase_Luxury_Goods_Jewelry__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Purchases luxury items</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Purchases luxury items</inlineHelpText>
+        <label>Luxury Goods &amp; Jewelry Buyer</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Append_Purchase_Magazine_Buyer__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Purchases magazines subscriptions</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Purchases magazines subscriptions</inlineHelpText>
+        <label>Magazine Buyer</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Append_Purchase_Outdoor_Adventure__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Purchases outdoor &amp; adventure products</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Purchases outdoor &amp; adventure products</inlineHelpText>
+        <label>Outdoor &amp; Adventure Buyer</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Append_Purchase_Pets__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Purchases pet related products</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Purchases pet related products</inlineHelpText>
+        <label>Pet Product Buyer</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Append_Purchase_Sports__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Purchases sporting goods/Sports related products</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Purchases sporting goods/Sports related products</inlineHelpText>
+        <label>Sports Product Buyer</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Append_Purchase_Technology__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Purchases technology</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Purchases technology</inlineHelpText>
+        <label>Technology Buyer</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Append_Purchase_Travel__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Purchases travel related goods; Interest in travel</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Purchases travel related goods; Interest in travel</inlineHelpText>
+        <label>Travel Buyer</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Append_Run_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Append Run Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>Append_Run__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Append Run</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Brand__c</fullName>
+        <externalId>false</externalId>
+        <label>Brand</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>VitaOlefera</fullName>
+                    <default>false</default>
+                    <label>VitaOlefera</label>
+                </value>
+                <value>
+                    <fullName>Sunology</fullName>
+                    <default>false</default>
+                    <label>Sunology</label>
+                </value>
+                <value>
+                    <fullName>Arctic4</fullName>
+                    <default>false</default>
+                    <label>Arctic4</label>
+                </value>
+                <value>
+                    <fullName>Cate Mcnabb</fullName>
+                    <default>false</default>
+                    <label>Cate Mcnabb</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>EAM_Date_First_Seen__c</fullName>
+        <description>Dating back to 2006, knowing the date (YYYY-MM-DD) we first saw an email
+address can drive fraud prevention algorithms by highlighting addresses that
+are newly created or with limited use.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Dating back to 2006, knowing the date (YYYY-MM-DD) we first saw an email
+address can drive fraud prevention algorithms by highlighting addresses that
+are newly created or with limited use.</inlineHelpText>
+        <label>Date Email First Seen</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>EAM_Month_Last_Opened__c</fullName>
+        <description>Sourced from trusted mailing partners,
+TouchCR provides the month and year (in YYYY-MM format) we last saw the
+email “open.” Match rates typically range from 30-40% for U.S. data.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Sourced from trusted mailing partners,
+TouchCR provides the month and year (in YYYY-MM format) we last saw the
+email “open.” Match rates typically range from 30-40% for U.S. data.</inlineHelpText>
+        <label>Month Last Opened</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>EAM_Popularity__c</fullName>
+        <defaultValue>0</defaultValue>
+        <description>How many other companies are seeing that email address?
+The popularity metric calculates the number of sources from whom
+TouchCR has seen the email within the past 12 months from
+no partners or sources (0) to most popular (10).</description>
+        <externalId>false</externalId>
+        <inlineHelpText>How many other companies are seeing that email address?
+The popularity metric calculates the number of sources from whom
+TouchCR has seen the email within the past 12 months from
+no partners or sources (0) to most popular (10).</inlineHelpText>
+        <label>Email Popularity</label>
+        <precision>2</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>EAM_Velocity__c</fullName>
+        <defaultValue>0</defaultValue>
+        <description>How often has that email address been seen recently? Here we analyze an
+address’ frequency of activity over the past 3 months from inactive (0) to
+most active (10).</description>
+        <externalId>false</externalId>
+        <inlineHelpText>How often has that email address been seen recently? Here we analyze an
+address’ frequency of activity over the past 3 months from inactive (0) to
+most active (10).</inlineHelpText>
+        <label>Email Velocity</label>
+        <precision>2</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Email_Append_Run_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Email Append Run Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>Email_Append_Run__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Email Append Run</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Email_Box_Valid__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Determines whether messages to a mailbox will hard bounce, soft bounce or deliver.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Determines whether messages to a mailbox will hard bounce, soft bounce or deliver.</inlineHelpText>
+        <label>Email Inbox is Valid</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Email_Checked__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Email Checked</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Email_Corrections__c</fullName>
+        <description>The following is the corrected version of the email address</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The following is the corrected version of the email address</inlineHelpText>
+        <label>Correct Email Address</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Email_Quality_Score__c</fullName>
+        <externalId>false</externalId>
+        <formula>CASE(
+	Email_Quality__c,
+	&quot;*&quot;, IMAGE(&quot;/img/samples/stars_100.gif&quot;, &quot;1 star&quot;),
+	&quot;**&quot;, IMAGE(&quot;/img/samples/stars_200.gif&quot;, &quot;2 stars&quot;),
+	&quot;***&quot;, IMAGE(&quot;/img/samples/stars_300.gif&quot;, &quot;3 stars&quot;),
+	&quot;****&quot;, IMAGE(&quot;/img/samples/stars_400.gif&quot;, &quot;4 stars&quot;),
+	&quot;*****&quot;, IMAGE(&quot;/img/samples/stars_500.gif&quot;, &quot;5 stars&quot;),
+	&quot;FW&quot;, IMAGE(&quot;/img/msg_icons/error16.png&quot;, &quot;FRAUD&quot;) + &quot; FRAUD WARNING&quot;,
+	&quot;ST&quot;, IMAGE(&quot;/img/msg_icons/error16.png&quot;, &quot;SPAM&quot;) + &quot; POSSIBLE SPAM TRAP&quot;,
+	&quot;BA&quot;, IMAGE(&quot;/img/msg_icons/error16.png&quot;, &quot;BOUNCE&quot;) + &quot; POSSIBLE BOUNCE ALERT&quot;,
+	&quot;HB&quot;, IMAGE(&quot;/img/msg_icons/error16.png&quot;, &quot;HARD BOUNCE&quot;) + &quot; HARD BOUNCE ALERT&quot;,
+	IMAGE(&quot;/img/samples/stars_000.gif&quot;, &quot;no rating&quot;)
+)</formula>
+        <label>Email Quality Score</label>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Email_Quality__c</fullName>
+        <description>Supported values are: from &quot;*&quot; to &quot;*****&quot;,
+&quot;FW&quot; for FRAUD WARNING,
+&quot;ST&quot; for POSSIBLE SPAM TRAP,
+&quot;BA&quot; for POSSIBLE BOUNCE ALERT,
+&quot;HB&quot; for HARD BOUNCE ALERT</description>
+        <externalId>false</externalId>
+        <label>Email Quality</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Email_Valid__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Identifies incorrect email syntax</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Identifies incorrect email syntax</inlineHelpText>
+        <label>Email Syntax is Valid</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>IP_Address_Location_City__c</fullName>
+        <externalId>false</externalId>
+        <label>IP Address Location City</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>IP_Address_Location_Country_Code__c</fullName>
+        <externalId>false</externalId>
+        <label>IP Address Location Country Code</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>IP_Address_Location_Country_Name__c</fullName>
+        <externalId>false</externalId>
+        <label>IP Address Location Country Name</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>IP_Address_Location_Region__c</fullName>
+        <externalId>false</externalId>
+        <label>IP Address Location Region</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Landing_Page_URL__c</fullName>
+        <externalId>false</externalId>
+        <label>Landing Page URL</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Lead_ip__c</fullName>
+        <externalId>false</externalId>
+        <label>Lead IP</label>
+        <length>50</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Referral_Domain__c</fullName>
+        <externalId>false</externalId>
+        <label>Referral Domain</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Sales_Funnel__c</fullName>
+        <externalId>false</externalId>
+        <label>Sales Funnel</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Social_Append_Run_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Social Append Run Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>Social_Append_Success__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Social Append Success</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Sub_Id1__c</fullName>
+        <externalId>false</externalId>
+        <label>Sub Id1</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Sub_Id2__c</fullName>
+        <externalId>false</externalId>
+        <label>Sub Id2</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Sub_Id3__c</fullName>
+        <externalId>false</externalId>
+        <label>Sub Id3</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Sub_Id4__c</fullName>
+        <externalId>false</externalId>
+        <label>Sub Id4</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Sub_Id5__c</fullName>
+        <externalId>false</externalId>
+        <label>Sub Id5</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Terms_And_Conditions_Time_Consent__c</fullName>
+        <externalId>false</externalId>
+        <label>Terms And Conditions Time Consent</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>Terms_And_Conditions__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Terms And Conditions</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>utm_campaign__c</fullName>
+        <externalId>false</externalId>
+        <label>utm_campaign</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>utm_content__c</fullName>
+        <externalId>false</externalId>
+        <label>utm_content</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>utm_medium__c</fullName>
+        <externalId>false</externalId>
+        <label>utm_medium</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>utm_source__c</fullName>
+        <externalId>false</externalId>
+        <label>utm_source</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>utm_term__c</fullName>
+        <externalId>false</externalId>
+        <label>utm_term</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <webLinks>
+        <fullName>Data_Append</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <linkType>page</linkType>
+        <masterLabel>Data Append</masterLabel>
+        <openType>replace</openType>
+        <page>LeadToDataAppend</page>
+        <protected>false</protected>
+    </webLinks>
+    <webLinks>
+        <fullName>Data_Append_List</fullName>
+        <availability>online</availability>
+        <displayType>massActionButton</displayType>
+        <linkType>page</linkType>
+        <masterLabel>Data Append</masterLabel>
+        <openType>replace</openType>
+        <page>DataAppendLeadList</page>
+        <protected>false</protected>
+        <requireRowSelection>true</requireRowSelection>
+    </webLinks>
+</CustomObject>

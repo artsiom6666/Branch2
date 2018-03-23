@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Ad_Type__c</fullName>
+    <externalId>false</externalId>
+    <label>Ad Type</label>
+    <required>false</required>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Banner Ad</fullName>
+                <default>true</default>
+                <label>Banner Ad</label>
+            </value>
+            <value>
+                <fullName>Video Ad</fullName>
+                <default>false</default>
+                <label>Video Ad</label>
+            </value>
+            <value>
+                <fullName>1st Party Email</fullName>
+                <default>false</default>
+                <label>1st Party Email</label>
+            </value>
+            <value>
+                <fullName>3rd Party Email</fullName>
+                <default>false</default>
+                <label>3rd Party Email</label>
+            </value>
+            <value>
+                <fullName>Internal Email</fullName>
+                <default>false</default>
+                <label>Internal Email</label>
+            </value>
+            <value>
+                <fullName>Email Ads</fullName>
+                <default>false</default>
+                <label>Email Ads</label>
+            </value>
+            <value>
+                <fullName>Integration Marketing</fullName>
+                <default>false</default>
+                <label>Integration Marketing</label>
+            </value>
+            <value>
+                <fullName>Pop-up</fullName>
+                <default>false</default>
+                <label>Pop-up</label>
+            </value>
+            <value>
+                <fullName>Drop down/Scroll up</fullName>
+                <default>false</default>
+                <label>Drop down/Scroll up</label>
+            </value>
+            <value>
+                <fullName>Exit Pop</fullName>
+                <default>false</default>
+                <label>Exit Pop</label>
+            </value>
+            <value>
+                <fullName>Referral</fullName>
+                <default>false</default>
+                <label>Referral</label>
+            </value>
+            <value>
+                <fullName>Affiliate</fullName>
+                <default>false</default>
+                <label>Affiliate</label>
+            </value>
+            <value>
+                <fullName>Text Post</fullName>
+                <default>false</default>
+                <label>Text Post</label>
+            </value>
+            <value>
+                <fullName>Image Post</fullName>
+                <default>false</default>
+                <label>Image Post</label>
+            </value>
+            <value>
+                <fullName>Webinar</fullName>
+                <default>false</default>
+                <label>Webinar</label>
+            </value>
+            <value>
+                <fullName>Content</fullName>
+                <default>false</default>
+                <label>Content</label>
+            </value>
+            <value>
+                <fullName>White Paper</fullName>
+                <default>false</default>
+                <label>White Paper</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

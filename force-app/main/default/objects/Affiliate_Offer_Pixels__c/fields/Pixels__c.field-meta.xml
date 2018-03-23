@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Pixels__c</fullName>
+    <externalId>false</externalId>
+    <label>Pixels</label>
+    <referenceTo>Pixels__c</referenceTo>
+    <relationshipLabel>Affiliate Offer Pixels</relationshipLabel>
+    <relationshipName>Affiliate_Offer_Pixels</relationshipName>
+    <relationshipOrder>0</relationshipOrder>
+    <reparentableMasterDetail>false</reparentableMasterDetail>
+    <trackTrending>false</trackTrending>
+    <type>MasterDetail</type>
+    <writeRequiresMasterRead>false</writeRequiresMasterRead>
+</CustomField>

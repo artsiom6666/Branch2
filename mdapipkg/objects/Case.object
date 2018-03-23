@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <fullName>Case_Sequence__c</fullName>
+        <externalId>false</externalId>
+        <label>Case Sequence</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Order__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Order</label>
+        <referenceTo>Order__c</referenceTo>
+        <relationshipLabel>Cases</relationshipLabel>
+        <relationshipName>Cases</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Reason_Case__c</fullName>
+        <externalId>false</externalId>
+        <label>Reason Case</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Request Reshipment</fullName>
+                    <default>false</default>
+                    <label>Request Reshipment</label>
+                </value>
+                <value>
+                    <fullName>Hold Shipment: Incorrect Order</fullName>
+                    <default>false</default>
+                    <label>Hold Shipment: Incorrect Order</label>
+                </value>
+                <value>
+                    <fullName>Hold Shipment: Incorrect Address</fullName>
+                    <default>false</default>
+                    <label>Hold Shipment: Incorrect Address</label>
+                </value>
+                <value>
+                    <fullName>Not Shipping</fullName>
+                    <default>false</default>
+                    <label>Not Shipping</label>
+                </value>
+                <value>
+                    <fullName>Unpaid Order</fullName>
+                    <default>false</default>
+                    <label>Unpaid Order</label>
+                </value>
+                <value>
+                    <fullName>No Valid Card</fullName>
+                    <default>false</default>
+                    <label>No Valid Card</label>
+                </value>
+                <value>
+                    <fullName>Unpaid Upsell</fullName>
+                    <default>false</default>
+                    <label>Unpaid Upsell</label>
+                </value>
+                <value>
+                    <fullName>Unpaid Autoship</fullName>
+                    <default>false</default>
+                    <label>Unpaid Autoship</label>
+                </value>
+                <value>
+                    <fullName>Save Sale Validation</fullName>
+                    <default>false</default>
+                    <label>Save Sale Validation</label>
+                </value>
+                <value>
+                    <fullName>Refund Required</fullName>
+                    <default>false</default>
+                    <label>Refund Required</label>
+                </value>
+                <value>
+                    <fullName>Authorization Release Failed</fullName>
+                    <default>false</default>
+                    <label>Authorization Release Failed</label>
+                </value>
+                <value>
+                    <fullName>Old Coupon In Flight</fullName>
+                    <default>false</default>
+                    <label>Old Coupon In Flight</label>
+                </value>
+                <value>
+                    <fullName>Warm Lead</fullName>
+                    <default>false</default>
+                    <label>Warm Lead</label>
+                </value>
+                <value>
+                    <fullName>Refund Failed</fullName>
+                    <default>false</default>
+                    <label>Refund Failed</label>
+                </value>
+                <value>
+                    <fullName>Low Inventory</fullName>
+                    <default>false</default>
+                    <label>Low Inventory</label>
+                </value>
+                <value>
+                    <fullName>Cancel of Autoship</fullName>
+                    <default>false</default>
+                    <label>Cancel of Autoship</label>
+                </value>
+                <value>
+                    <fullName>New Knowledge Article Requested</fullName>
+                    <default>false</default>
+                    <label>New Knowledge Article Requested</label>
+                </value>
+                <value>
+                    <fullName>Change Autoship</fullName>
+                    <default>false</default>
+                    <label>Change Autoship</label>
+                </value>
+                <value>
+                    <fullName>Chargeback Threat</fullName>
+                    <default>false</default>
+                    <label>Chargeback Threat</label>
+                </value>
+                <value>
+                    <fullName>Back Order</fullName>
+                    <default>false</default>
+                    <label>Back Order</label>
+                </value>
+                <value>
+                    <fullName>Split Shipment</fullName>
+                    <default>false</default>
+                    <label>Split Shipment</label>
+                </value>
+                <value>
+                    <fullName>Contact Us</fullName>
+                    <default>false</default>
+                    <label>Contact Us</label>
+                </value>
+                <value>
+                    <fullName>Social Interaction</fullName>
+                    <default>false</default>
+                    <label>Social Interaction</label>
+                </value>
+                <value>
+                    <fullName>Article Correction</fullName>
+                    <default>false</default>
+                    <label>Article Correction</label>
+                </value>
+                <value>
+                    <fullName>Chargeback Received</fullName>
+                    <default>false</default>
+                    <label>Chargeback Received</label>
+                </value>
+                <value>
+                    <fullName>Fraud Review</fullName>
+                    <default>false</default>
+                    <label>Fraud Review</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+</CustomObject>

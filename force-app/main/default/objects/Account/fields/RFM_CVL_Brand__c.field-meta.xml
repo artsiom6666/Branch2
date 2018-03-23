@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>RFM_CVL_Brand__c</fullName>
+    <externalId>false</externalId>
+    <formula>CASE(
+	Recency_Score_Brand__c,
+	5, CASE(
+		Frequency_Score_Brand__c,
+		5, CASE(
+			Monetary_Score_Brand__c,
+			5, "BEST",
+			4, "BEST",
+			3, "GREAT",
+			2, "GREAT",
+			1, "GOOD",
+			""
+		),
+		4, CASE(
+			Monetary_Score_Brand__c,
+			5, "BEST",
+			4, "BEST",
+			3, "GREAT",
+			2, "GREAT",
+			1, "GOOD",
+			""
+		),
+		3, CASE(
+			Monetary_Score_Brand__c,
+			5, "GREAT",
+			4, "GREAT",
+			3, "GREAT",
+			2, "GOOD",
+			1, "GOOD",
+			""
+		),
+		2, CASE(
+			Monetary_Score_Brand__c,
+			5, "GREAT",
+			4, "GOOD",
+			3, "GOOD",
+			2, "OK",
+			1, "OK",
+			""
+		),
+		1, CASE(
+			Monetary_Score_Brand__c,
+			5, "GOOD",
+			4, "GOOD",
+			3, "OK",
+			2, "OK",
+			1, "LOW",
+			""
+		 ),
+			""
+	),
+	4, CASE(
+		Frequency_Score_Brand__c,
+		5, CASE(
+			Monetary_Score_Brand__c,
+			5, "BEST",
+			4, "GREAT",
+			3, "GOOD",
+			2, "GOOD",
+			1, "OK",
+			""
+		),
+		4, CASE(
+			Monetary_Score_Brand__c,
+			5, "GREAT",
+			4, "GREAT",
+			3, "GOOD",
+			2, "OK",
+			1, "OK",
+			""
+		),
+		3, CASE(
+			Monetary_Score_Brand__c,
+			5, "GOOD",
+			4, "GOOD",
+			3, "GOOD",
+			2, "OK",
+			1, "OK",
+			""
+		),
+		2, CASE(
+			Monetary_Score_Brand__c,
+			5, "OK",
+			4, "OK",
+			3, "OK",
+			2, "OK",
+			1, "LOW",
+			""
+		),
+		1, CASE(
+			Monetary_Score_Brand__c,
+			5, "OK",
+			4, "OK",
+			3, "OK",
+			2, "LOW",
+			1, "LOW",
+			""
+		),
+		""
+	),
+	3, CASE(
+		Frequency_Score_Brand__c,
+		5, CASE(
+			Monetary_Score_Brand__c,
+			5, "GREAT",
+			4, "GOOD",
+			3, "OK",
+			2, "OK",
+			1, "OK",
+			""
+		),
+		4, CASE(
+			Monetary_Score_Brand__c,
+			5, "GOOD",
+			4, "GOOD",
+			3, "OK",
+			2, "OK",
+			1, "LOW",
+			""
+		),
+		3, CASE(
+			Monetary_Score_Brand__c,
+			5, "OK",
+			4, "OK",
+			3, "OK",
+			2, "LOW",
+			1, "LOW",
+			""
+		),
+		2, CASE(
+			Monetary_Score_Brand__c,
+			5, "OK",
+			4, "OK",
+			3, "LOW",
+			2, "LOW",
+			1, "LOW",
+			""
+		),
+		1, CASE(
+			Monetary_Score_Brand__c,
+			5, "OK",
+			4, "LOW",
+			3, "LOW",
+			2, "LOW",
+			1, "LOW",
+			""
+		),
+		""
+	 ),
+	2, CASE(
+		Frequency_Score_Brand__c,
+		5, CASE(
+			Monetary_Score_Brand__c,
+				5, "GOOD",
+				4, "OK",
+				3, "OK",
+				2, "LOW",
+				1, "LOW",
+				""
+		),
+		4, CASE(
+			Monetary_Score_Brand__c,
+			5, "OK",
+			4, "OK",
+			3, "OK",
+			2, "LOW",
+			1, "LOW",
+			""
+		),
+		3, CASE(
+			Monetary_Score_Brand__c,
+			5, "OK",
+			4, "OK",
+			3, "OK",
+			2, "LOW",
+			1, "LOW",
+			""
+		),
+		2, CASE(
+			Monetary_Score_Brand__c,
+			5, "LOW",
+			4, "LOW",
+			3, "LOW",
+			2, "LOW",
+			1, "LOST",
+			""
+		),
+		1, CASE(
+			Monetary_Score_Brand__c,
+			5, "LOW",
+			4, "LOW",
+			3, "LOW",
+			2, "LOST",
+			1, "LOST",
+			""
+		),
+		""
+	),
+	1, CASE(
+		Frequency_Score_Brand__c,
+		5, CASE(
+			Monetary_Score_Brand__c,
+			5, "LOST",
+			4, "LOST",
+			3, "LOST",
+			2, "LOST",
+			1, "LOST",
+			""
+		),
+		4, CASE(
+			Monetary_Score_Brand__c,
+			5, "LOST",
+			4, "LOST",
+			3, "LOST",
+			2, "LOST",
+			1, "LOST",
+			""
+		),
+		3, CASE(
+			Monetary_Score_Brand__c,
+			5, "LOST",
+			4, "LOST",
+			3, "LOST",
+			2, "LOST",
+			1, "LOST",
+			""
+		),
+		2, CASE(
+			Monetary_Score_Brand__c,
+			5, "LOST",
+			4, "LOST",
+			3, "LOST",
+			2, "LOST",
+			1, "LOST",
+			""
+		),
+		1, CASE(
+			Monetary_Score_Brand__c,
+			5, "LOST",
+			4, "LOST",
+			3, "LOST",
+			2, "LOST",
+			1, "LOST",
+			""
+		),
+		""
+	),
+	""
+)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Customer Value Label Brand</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Product_Price_Required</fullName>
+    <active>true</active>
+    <description>If Standard Price isn't checked, Product Price field is required.</description>
+    <errorConditionFormula>(Use_Standard_Price__c = FALSE)
+&amp;&amp;
+ISBLANK( Product_Price__c )</errorConditionFormula>
+    <errorMessage>You need to either place a custom Product Price or enabled Use Standard Price</errorMessage>
+</ValidationRule>

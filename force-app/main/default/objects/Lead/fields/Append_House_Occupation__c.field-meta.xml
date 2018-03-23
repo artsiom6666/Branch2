@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Append_House_Occupation__c</fullName>
+    <description>Householder occupation type as follows: Blue Collar Worker; Business Owner; Civil Service; Technology; Executive/Upper Management; Health Services; Homemaker; Middle Management; Military Personnel; Nurse; Part Time; Professional; Retired; Secretary; Student; Teacher; White Collar Worker</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Householder occupation type as follows: Blue Collar Worker; Business Owner; Civil Service; Technology; Executive/Upper Management; Health Services; Homemaker; Middle Management; Military Personnel; Nurse; Part Time; Professional; Retired; Secretary; Stude</inlineHelpText>
+    <label>Occupation Type in Household</label>
+    <length>255</length>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

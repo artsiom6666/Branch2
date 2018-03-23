@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Append_Address_ZIp__c</fullName>
+    <description>Zip/Postal Code derived from email address</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Zip/Postal Code derived from email address</inlineHelpText>
+    <label>Appended Zip/Postal Code</label>
+    <length>255</length>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

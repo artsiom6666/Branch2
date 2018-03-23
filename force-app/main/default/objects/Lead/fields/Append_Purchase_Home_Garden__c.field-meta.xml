@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Append_Purchase_Home_Garden__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Purchases home &amp; garden products</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Purchases home &amp; garden products</inlineHelpText>
+    <label>Home &amp; Garden Buyer</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>Checkbox</type>
+</CustomField>

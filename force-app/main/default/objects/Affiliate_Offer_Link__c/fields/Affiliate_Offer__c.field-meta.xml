@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Affiliate_Offer__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <externalId>false</externalId>
+    <label>Affiliate Offer</label>
+    <referenceTo>Affiliate_Offer__c</referenceTo>
+    <relationshipLabel>Affiliate Offer Links</relationshipLabel>
+    <relationshipName>Affiliate_Offer_Links</relationshipName>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

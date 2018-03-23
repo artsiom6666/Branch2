@@ -1,0 +1,4485 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <fullName>Affiliate_Approval__c</fullName>
+        <externalId>false</externalId>
+        <label>Affiliate Approval</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Allow to be Affiliate</fullName>
+                    <default>false</default>
+                    <label>Allow to be Affiliate</label>
+                </value>
+                <value>
+                    <fullName>Waiting for Approval</fullName>
+                    <default>false</default>
+                    <label>Waiting for Approval</label>
+                </value>
+                <value>
+                    <fullName>Approved</fullName>
+                    <default>false</default>
+                    <label>Approved</label>
+                </value>
+                <value>
+                    <fullName>Rejected</fullName>
+                    <default>false</default>
+                    <label>Rejected</label>
+                </value>
+                <value>
+                    <fullName>Frozen</fullName>
+                    <default>false</default>
+                    <label>Frozen</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Apex_Brand_Job_Id__c</fullName>
+        <externalId>false</externalId>
+        <label>Apex Brand Job Id</label>
+        <length>18</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Apex_Job_Id__c</fullName>
+        <externalId>false</externalId>
+        <label>Apex Job Id</label>
+        <length>18</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Append_Address_City__c</fullName>
+        <description>City derived from email address</description>
+        <externalId>false</externalId>
+        <inlineHelpText>City derived from email address</inlineHelpText>
+        <label>Appended City</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Append_Address_State__c</fullName>
+        <description>State derived from email address</description>
+        <externalId>false</externalId>
+        <inlineHelpText>State derived from email address</inlineHelpText>
+        <label>Appended State</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Append_Address_Street__c</fullName>
+        <description>Street address derived from email address</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Street address derived from email address</inlineHelpText>
+        <label>Appended Street Address</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Append_Address_ZIp__c</fullName>
+        <description>Zip/Postal Code derived from email address</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Zip/Postal Code derived from email address</inlineHelpText>
+        <label>Appended Zip/Postal Code</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Append_Demo_Age__c</fullName>
+        <description>Age of the individual in ranges.
+18-20
+21-24
+25-34
+35-44
+45-54
+55-64
+65+</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Age of the individual in ranges.
+18-20
+21-24
+25-34
+35-44
+45-54
+55-64
+65+</inlineHelpText>
+        <label>Age</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Append_Demo_Education__c</fullName>
+        <description>Indicates the highest known level of education the
+person has completed. Completed High School; Attended College;
+Completed College; Completed Graduate School;
+Attended Vocational/Technical</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Indicates the highest known level of education the
+person has completed. Completed High School; Attended College;
+Completed College; Completed Graduate School;
+Attended Vocational/Technical</inlineHelpText>
+        <label>Education Level Attained</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Append_Demo_Gender__c</fullName>
+        <description>Gender of the input individual: “Male” or “Female”</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Gender of the input individual: “Male” or “Female”</inlineHelpText>
+        <label>Gender</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Append_Demo_Net_Worth__c</fullName>
+        <description>Indicates the net worth of the household. 0-5k, 5k-10k, 10k-25k, 25k-50k, 50k-100k, 100k-250k,
+250k-500k, 500k-750k, 750k-1mm, 1mm+</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Indicates the net worth of the household. 0-5k, 5k-10k, 10k-25k, 25k-50k, 50k-100k, 100k-250k,
+250k-500k, 500k-750k, 750k-1mm, 1mm+</inlineHelpText>
+        <label>Net Worth of Household</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Append_Demo_Zip__c</fullName>
+        <description>Known Location by Zip Code</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Known Location by Zip Code</inlineHelpText>
+        <label>Location By Zip Code</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Append_House_Children__c</fullName>
+        <description>Indicates whether there are 1 or more children
+in the household.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Indicates whether there are 1 or more children
+in the household.</inlineHelpText>
+        <label>Presence of Children in House</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Append_House_Income__c</fullName>
+        <description>Annual income of household by range. 0-15k; 15k-25k; 25k-35k; 35k-50k; 50k-75k;
+75k-100k; 100k-125k; 125k-150k; 150k-175k;
+175k-200k; 200k-250k; 250k+</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Annual income of household by range. 0-15k; 15k-25k; 25k-35k; 35k-50k; 50k-75k;
+75k-100k; 100k-125k; 125k-150k; 150k-175k;
+175k-200k; 200k-250k; 250k+</inlineHelpText>
+        <label>Household Income</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Append_House_Length_of_Residence__c</fullName>
+        <description>Number of years spent in the current residence.
+Reported as number; not range. Less than 1 year; 1 year; 2 years; 3 years; 4 years;
+5 years; 6 years; 7 years; 8 years; 9 years; 10 years;
+11-15 years; 16 -19 years; 20+ years</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Number of years spent in the current residence.
+Reported as number; not range. Less than 1 year; 1 year; 2 years; 3 years; 4 years;
+5 years; 6 years; 7 years; 8 years; 9 years; 10 years;
+11-15 years; 16 -19 years; 20+ years</inlineHelpText>
+        <label>Years at Current Address</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Append_House_Marital_Status__c</fullName>
+        <description>Known marital status of the household. Single or married.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Known marital status of the household. Single or married.</inlineHelpText>
+        <label>Marital Status</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Append_House_Occupation__c</fullName>
+        <description>Household type as follows: Blue Collar Worker; Business Owner; Civil Service; Technology; Executive/Upper Management; Health Services; Homemaker; Middle Management; Military Personnel; Nurse; Part Time; Professional; Retired;
+Secretary; Student; Teacher; White Collar Worker</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Household type as follows: Blue Collar Worker; Business Owner; Civil Service; Technology; Executive/Upper Management; Health Services; Homemaker; Middle Management; Military Personnel; Nurse; Part Time; Professional; Retired;</inlineHelpText>
+        <label>Occupation Type in Household</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Append_House_Owner_Status__c</fullName>
+        <description>Whether the person owns or rents their home</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Whether the person owns or rents their home</inlineHelpText>
+        <label>Home Owner Status</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Append_House_Value__c</fullName>
+        <description>Market value of person’s home. In ranges of $25K and $50K increments. 1k-25k; 25k-50k; 50k-75k; 75k-100k; 100k-150k; 150k-200k; 200k-250k; 250k-300k; 300k-350k; 350k-500k; 500k-1mm; 1mm+</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Market value of person’s home. In ranges of $25K and $50K increments. 1k-25k; 25k-50k; 50k-75k; 75k-100k; 100k-150k; 150k-200k; 200k-250k; 250k-300k; 300k-350k; 350k-500k; 500k-1mm; 1mm+</inlineHelpText>
+        <label>House Market Value</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Append_Interest_Arts_Craft__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Purchases arts &amp; crafts related products</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Purchases arts &amp; crafts related products</inlineHelpText>
+        <label>Known Interest in Arts &amp; Craft</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Append_Interest_Blogging__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Interest in blogging</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Interest in blogging</inlineHelpText>
+        <label>Known Interest in Blogging</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Append_Interest_Books__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Purchases books and Interested in reading books</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Purchases books and Interested in reading books</inlineHelpText>
+        <label>Known Interest in Books</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Append_Interest_Business__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Known Interest In Business</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Known Interest In Business</inlineHelpText>
+        <label>Known Interest in Business</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Append_Interest_Health_Wellness__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Known interest in healthy lifestyle and purchases healthy lifestyle products</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Known interest in healthy lifestyle and purchases healthy lifestyle products</inlineHelpText>
+        <label>Known Interest in Health &amp; Wellness</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Append_Interest_News_Current_Affairs__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Purchases subscriptions for news &amp; current events.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Purchases subscriptions for news &amp; current events.</inlineHelpText>
+        <label>Known Interest in News &amp; Current Affairs</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Append_Need_Append__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Set to true if Converted Lead must be appended from TowerData</description>
+        <externalId>false</externalId>
+        <label>Append Need Append</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Append_Purchase_Automotive__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Purchases automotive goods</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Purchases automotive goods</inlineHelpText>
+        <label>Automotive Buyer</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Append_Purchase_Baby_Product_Buyer__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Has bought a baby product in the past 18 months</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Has bought a baby product in the past 18 months</inlineHelpText>
+        <label>Baby Product Buyer</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Append_Purchase_Beauty__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Purchases beauty products</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Purchases beauty products</inlineHelpText>
+        <label>Beauty Product Buyer</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Append_Purchase_Charitable_Doner__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Indicates likelihood of being a charitable donor</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Indicates likelihood of being a charitable donor</inlineHelpText>
+        <label>Charitable Doner</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Append_Purchase_Cooking__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Purchases cooking magazines and interest in cooking</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Purchases cooking magazines and interest in cooking</inlineHelpText>
+        <label>Cooking Buyer</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Append_Purchase_Discount_Shopper__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Interested in discounts when buying</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Interested in discounts when buying</inlineHelpText>
+        <label>Discount Shopper</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Append_Purchase_High_End_Brand_Buyer__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Has bought a premium CPG brand in the past 18 months</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Has bought a premium CPG brand in the past 18 months</inlineHelpText>
+        <label>High End Brand Buyer</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Append_Purchase_Home_Garden__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Purchases home &amp; garden products</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Purchases home &amp; garden products</inlineHelpText>
+        <label>Home &amp; Garden Buyer</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Append_Purchase_Home_Improvement__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Purchases home improvement goods</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Purchases home improvement goods</inlineHelpText>
+        <label>Home Improvement Buyer</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Append_Purchase_Luxury_Goods_Jewelry__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Purchases luxury items</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Purchases luxury items</inlineHelpText>
+        <label>Luxury Goods &amp; Jewelry Buyer</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Append_Purchase_Magazine_Buyer__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Purchases magazines subscriptions</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Purchases magazines subscriptions</inlineHelpText>
+        <label>Magazine Buyer</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Append_Purchase_Outdoor_Adventure__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Purchases outdoor &amp; adventure products</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Purchases outdoor &amp; adventure products</inlineHelpText>
+        <label>Outdoor &amp; Adventure Buyer</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Append_Purchase_Pets__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Purchases pet related products</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Purchases pet related products</inlineHelpText>
+        <label>Pet Product Buyer</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Append_Purchase_Sports__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Purchases sporting goods/Sports related products</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Purchases sporting goods/Sports related products</inlineHelpText>
+        <label>Sports Product Buyer</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Append_Purchase_Technology__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Purchases technology</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Purchases technology</inlineHelpText>
+        <label>Technology Buyer</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Append_Purchase_Travel__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Purchases travel related goods; Interest in travel</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Purchases travel related goods; Interest in travel</inlineHelpText>
+        <label>Travel Buyer</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Append_Run_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Append Run Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>Append_Run__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Append Run</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Available_Balance__c</fullName>
+        <externalId>false</externalId>
+        <label>Available Balance</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Available_Balance_for_Withdrawal__c</fullName>
+        <externalId>false</externalId>
+        <formula>Commissions_Available_for_Withdrawal__c +  Refund_For_Previous_Payouts__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Available Balance for Withdrawal</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Average_Affiliate_Order_Value__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF(Total_Revenue__c == 0 || Total_Transactions__c == 0, 0, Total_Revenue__c / Total_Transactions__c)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Average Order Value</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Average_Number_of_days_between_orders__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF(Number_of_Orders__c &gt; 1 ,(Last_order_date__c - First_Order_Date__c) / ( Number_of_Orders__c - 1), 0)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Average Number of Days Between Orders</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Average_Order_Value__c</fullName>
+        <externalId>false</externalId>
+        <label>Average Order Value</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Balance_Due__c</fullName>
+        <externalId>false</externalId>
+        <formula>Commission_Earned__c -  Commission_Paid_Out__c -  Commission_Waiting_for_Approval__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Balance Due</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Blacklist__c</fullName>
+        <description>If a customer has charged back or has been banned by the business</description>
+        <externalId>false</externalId>
+        <label>Blacklist</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>False</fullName>
+                    <default>true</default>
+                    <label>False</label>
+                </value>
+                <value>
+                    <fullName>True</fullName>
+                    <default>false</default>
+                    <label>True</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Brand_Assortment__c</fullName>
+        <description>Brand</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Brand</inlineHelpText>
+        <label>Brand</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Winter</fullName>
+                    <default>false</default>
+                    <label>Winter</label>
+                </value>
+                <value>
+                    <fullName>Spring</fullName>
+                    <default>false</default>
+                    <label>Spring</label>
+                </value>
+                <value>
+                    <fullName>Summer</fullName>
+                    <default>false</default>
+                    <label>Summer</label>
+                </value>
+                <value>
+                    <fullName>Autumn</fullName>
+                    <default>false</default>
+                    <label>Autumn</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Commission_Earned__c</fullName>
+        <externalId>false</externalId>
+        <label>Commission Earned</label>
+        <summarizedField>Affiliate_Offer__c.Commissions_Earned__c</summarizedField>
+        <summaryForeignKey>Affiliate_Offer__c.Account__c</summaryForeignKey>
+        <summaryOperation>sum</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>Commission_Paid_Out__c</fullName>
+        <externalId>false</externalId>
+        <label>Commission Paid Out</label>
+        <summarizedField>Payouts__c.Amount_Transferred__c</summarizedField>
+        <summaryFilterItems>
+            <field>Payouts__c.Status__c</field>
+            <operation>equals</operation>
+            <value>Approved</value>
+        </summaryFilterItems>
+        <summaryForeignKey>Payouts__c.Account__c</summaryForeignKey>
+        <summaryOperation>sum</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>Commission_Waiting_for_Approval__c</fullName>
+        <externalId>false</externalId>
+        <label>Commission Waiting for Approval</label>
+        <summarizedField>Payouts__c.Amount_Transferred__c</summarizedField>
+        <summaryFilterItems>
+            <field>Payouts__c.Status__c</field>
+            <operation>equals</operation>
+            <value>Waiting For Approval</value>
+        </summaryFilterItems>
+        <summaryForeignKey>Payouts__c.Account__c</summaryForeignKey>
+        <summaryOperation>sum</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>Commissions_Available_for_Withdrawal__c</fullName>
+        <externalId>false</externalId>
+        <label>Commissions Available for Withdrawal</label>
+        <summarizedField>Affiliate_Offer__c.Commissions_Earned_for_Withdrawal__c</summarizedField>
+        <summaryForeignKey>Affiliate_Offer__c.Account__c</summaryForeignKey>
+        <summaryOperation>sum</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>Commissions_Not_Passed_Refund_Period__c</fullName>
+        <externalId>false</externalId>
+        <label>Commissions Not Passed Refund Period</label>
+        <summarizedField>Affiliate_Offer__c.Commission_Not_Passed_Refund_Period__c</summarizedField>
+        <summaryForeignKey>Affiliate_Offer__c.Account__c</summaryForeignKey>
+        <summaryOperation>sum</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>Commissions_Paid_And_Refunded__c</fullName>
+        <externalId>false</externalId>
+        <label>Commissions Paid And Refunded</label>
+        <summarizedField>Affiliate_Offer__c.Commissions_Paid_And_Refunded__c</summarizedField>
+        <summaryForeignKey>Affiliate_Offer__c.Account__c</summaryForeignKey>
+        <summaryOperation>sum</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>Commissions_Paid__c</fullName>
+        <externalId>false</externalId>
+        <label>Commissions Paid</label>
+        <summarizedField>Affiliate_Offer__c.Commissions_Paid__c</summarizedField>
+        <summaryForeignKey>Affiliate_Offer__c.Account__c</summaryForeignKey>
+        <summaryOperation>sum</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>Commissions_Refunded__c</fullName>
+        <externalId>false</externalId>
+        <label>Commissions Refunded</label>
+        <summarizedField>Affiliate_Offer__c.Commissions_Refunded__c</summarizedField>
+        <summaryForeignKey>Affiliate_Offer__c.Account__c</summaryForeignKey>
+        <summaryOperation>sum</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>Company_Name__c</fullName>
+        <externalId>false</externalId>
+        <label>Company Name</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>DF_Append_Run_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>DF Append Run Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>DF_Append_Run__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>DF Append Run</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>DF_Append_Success__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>DF Append Success</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>DF_Email__c</fullName>
+        <externalId>false</externalId>
+        <label>DF Email</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>DF_Match_Probability__c</fullName>
+        <defaultValue>0</defaultValue>
+        <externalId>false</externalId>
+        <label>DF Match Probability</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Date_Lead_Acquired__c</fullName>
+        <externalId>false</externalId>
+        <label>Date Lead Acquired</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Days_After_Last_Order__c</fullName>
+        <defaultValue>0</defaultValue>
+        <externalId>false</externalId>
+        <label>Days After Last Order</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Days_Between_Avg_and_Last__c</fullName>
+        <externalId>false</externalId>
+        <formula>Days_Since_Last_Order__c -  Average_Number_of_days_between_orders__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Days Between Avg and Last</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Days_Since_Last_Order__c</fullName>
+        <externalId>false</externalId>
+        <formula>NOW() - Last_order_date__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Days Since Last Order</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Depot__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Depot</label>
+        <referenceTo>Depot__c</referenceTo>
+        <relationshipLabel>Franchisee</relationshipLabel>
+        <relationshipName>Accounts</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>EAM_Date_First_Seen__c</fullName>
+        <description>Spanning over 200,000,000 unique emails in the past 12 months, this data
+identifies active emails within your list. Sourced from trusted mailing partners,
+this provides the month and year (in YYYY-MM format) we last saw the
+email “open.” Match rates typically range from 30-40% for U.S. data.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Spanning over 200,000,000 unique emails in the past 12 months, this data
+identifies active emails within your list. Sourced from trusted mailing partners,
+this provides the month and year (in YYYY-MM format) we last saw the
+email “open.” Match rates</inlineHelpText>
+        <label>Date Email First Seen</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>EAM_Month_Last_Opened__c</fullName>
+        <description>The month when we last saw the email address open a message. Great for determining which addresses are in active use.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The month when we last saw the email address open a message. Great for determining which addresses are in active use.</inlineHelpText>
+        <label>Month Last Opened</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>EAM_Popularity__c</fullName>
+        <defaultValue>0</defaultValue>
+        <description>How many other companies are seeing that email address?
+The popularity metric calculates the number of sources from whom
+TouchCR has seen the email within the past 12 months from
+no partners or sources (0) to most popular (10).</description>
+        <externalId>false</externalId>
+        <inlineHelpText>How many other companies are seeing that email address?
+The popularity metric calculates the number of sources from whom
+TouchCR has seen the email within the past 12 months from
+no partners or sources (0) to most popular (10).</inlineHelpText>
+        <label>Email Popularity</label>
+        <precision>2</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>EAM_Velocity__c</fullName>
+        <defaultValue>0</defaultValue>
+        <description>The activity level of an email address over the past three months</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The activity level of an email address over the past three months</inlineHelpText>
+        <label>Email Velocity</label>
+        <precision>2</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Email_Append_Run_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Email Append Run Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>Email_Append_Run__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Email Append Run</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Email_Box_Valid__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Determines whether messages to a mailbox will hard bounce, soft bounce or deliver.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Determines whether messages to a mailbox will hard bounce, soft bounce or deliver.</inlineHelpText>
+        <label>Email Inbox is Valid</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Email_Checked__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Email Checked</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Email_Corrections__c</fullName>
+        <description>The following is the corrected version of the email</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The following is the corrected version of the email</inlineHelpText>
+        <label>Corrected Email Address</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Email_Quality_Score__c</fullName>
+        <externalId>false</externalId>
+        <formula>CASE(
+	Email_Quality__c,
+	&quot;*&quot;, IMAGE(&quot;/img/samples/stars_100.gif&quot;, &quot;1 star&quot;),
+	&quot;**&quot;, IMAGE(&quot;/img/samples/stars_200.gif&quot;, &quot;2 stars&quot;),
+	&quot;***&quot;, IMAGE(&quot;/img/samples/stars_300.gif&quot;, &quot;3 stars&quot;),
+	&quot;****&quot;, IMAGE(&quot;/img/samples/stars_400.gif&quot;, &quot;4 stars&quot;),
+	&quot;*****&quot;, IMAGE(&quot;/img/samples/stars_500.gif&quot;, &quot;5 stars&quot;),
+	&quot;FW&quot;, IMAGE(&quot;/img/msg_icons/error16.png&quot;, &quot;FRAUD&quot;) + &quot; FRAUD WARNING&quot;,
+	&quot;ST&quot;, IMAGE(&quot;/img/msg_icons/error16.png&quot;, &quot;SPAM&quot;) + &quot; POSSIBLE SPAM TRAP&quot;,
+	&quot;BA&quot;, IMAGE(&quot;/img/msg_icons/error16.png&quot;, &quot;BOUNCE&quot;) + &quot; POSSIBLE BOUNCE ALERT&quot;,
+	&quot;HB&quot;, IMAGE(&quot;/img/msg_icons/error16.png&quot;, &quot;HARD BOUNCE&quot;) + &quot; HARD BOUNCE ALERT&quot;,
+	IMAGE(&quot;/img/samples/stars_000.gif&quot;, &quot;no rating&quot;)
+)</formula>
+        <label>Email Quality Score</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Email_Quality__c</fullName>
+        <description>Supported values are: from &quot;*&quot; to &quot;*****&quot;,
+&quot;FW&quot; for FRAUD WARNING,
+&quot;ST&quot; for POSSIBLE SPAM TRAP,
+&quot;BA&quot; for POSSIBLE BOUNCE ALERT,
+&quot;HB&quot; for HARD BOUNCE ALERT</description>
+        <externalId>false</externalId>
+        <label>Email Quality</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Email_Valid__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Identifies invalid email formats</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Identifies invalid email formats</inlineHelpText>
+        <label>Email Syntax is Valid</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>First_Order_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>First Order Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>Franchisee_Approval__c</fullName>
+        <externalId>false</externalId>
+        <label>Franchisee Approval</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Allow to be Franchisee</fullName>
+                    <default>false</default>
+                    <label>Allow to be Franchisee</label>
+                </value>
+                <value>
+                    <fullName>Waiting for Approval</fullName>
+                    <default>false</default>
+                    <label>Waiting for Approval</label>
+                </value>
+                <value>
+                    <fullName>Approved</fullName>
+                    <default>false</default>
+                    <label>Approved</label>
+                </value>
+                <value>
+                    <fullName>Rejected</fullName>
+                    <default>false</default>
+                    <label>Rejected</label>
+                </value>
+                <value>
+                    <fullName>Frozen</fullName>
+                    <default>false</default>
+                    <label>Frozen</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Franchisee__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Franchisee</label>
+        <referenceTo>Account</referenceTo>
+        <relationshipLabel>Customers</relationshipLabel>
+        <relationshipName>Customers</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Frequency_Score_Brand__c</fullName>
+        <defaultValue>0</defaultValue>
+        <externalId>false</externalId>
+        <label>Frequency Score Brand</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Frequency_Score__c</fullName>
+        <defaultValue>0</defaultValue>
+        <externalId>false</externalId>
+        <label>Frequency Score</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>GA_Visitor_ID__c</fullName>
+        <externalId>false</externalId>
+        <label>GA Visitor ID</label>
+        <length>80</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Geolocation__c</fullName>
+        <displayLocationInDecimal>true</displayLocationInDecimal>
+        <externalId>false</externalId>
+        <label>Geolocation</label>
+        <required>false</required>
+        <scale>15</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Location</type>
+    </fields>
+    <fields>
+        <fullName>IP_Address_Location_City__c</fullName>
+        <externalId>false</externalId>
+        <label>IP Address Location City</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>IP_Address_Location_Country_Code__c</fullName>
+        <externalId>false</externalId>
+        <label>IP Address Location Country Code</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>IP_Address_Location_Country_Name__c</fullName>
+        <externalId>false</externalId>
+        <label>IP Address Location Country Name</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>IP_Address_Location_Region__c</fullName>
+        <externalId>false</externalId>
+        <label>IP Address Location Region</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Initial_Customer_Value__c</fullName>
+        <externalId>false</externalId>
+        <label>Initial Customer Value</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>JetAccountId__c</fullName>
+        <externalId>true</externalId>
+        <label>JetAccountId</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Large_Order_Value__c</fullName>
+        <externalId>false</externalId>
+        <label>Large Order Value</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Last4__c</fullName>
+        <externalId>false</externalId>
+        <label>Last4</label>
+        <length>4</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Last_order_date__c</fullName>
+        <description>Last order date rollup based on Customer Orders</description>
+        <externalId>false</externalId>
+        <label>Last Order Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>Lead_CTL__c</fullName>
+        <externalId>false</externalId>
+        <label>Lead CTL</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Legal_Entity_Address_Line_1__c</fullName>
+        <externalId>false</externalId>
+        <label>Legal Entity Address Line 1</label>
+        <length>80</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Legal_Entity_Business_Name__c</fullName>
+        <externalId>false</externalId>
+        <label>Legal Entity Business Name</label>
+        <length>80</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Legal_Entity_Business_Tax_ID__c</fullName>
+        <externalId>false</externalId>
+        <label>Legal Entity Business Tax ID</label>
+        <length>80</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Legal_Entity_City__c</fullName>
+        <externalId>false</externalId>
+        <label>Legal Entity City</label>
+        <length>80</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Legal_Entity_Date_of_Birth_Day__c</fullName>
+        <externalId>false</externalId>
+        <label>Legal Entity Date of Birth Day</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>-</fullName>
+                    <default>true</default>
+                    <label>-</label>
+                </value>
+                <value>
+                    <fullName>1</fullName>
+                    <default>false</default>
+                    <label>1</label>
+                </value>
+                <value>
+                    <fullName>2</fullName>
+                    <default>false</default>
+                    <label>2</label>
+                </value>
+                <value>
+                    <fullName>3</fullName>
+                    <default>false</default>
+                    <label>3</label>
+                </value>
+                <value>
+                    <fullName>4</fullName>
+                    <default>false</default>
+                    <label>4</label>
+                </value>
+                <value>
+                    <fullName>5</fullName>
+                    <default>false</default>
+                    <label>5</label>
+                </value>
+                <value>
+                    <fullName>6</fullName>
+                    <default>false</default>
+                    <label>6</label>
+                </value>
+                <value>
+                    <fullName>7</fullName>
+                    <default>false</default>
+                    <label>7</label>
+                </value>
+                <value>
+                    <fullName>8</fullName>
+                    <default>false</default>
+                    <label>8</label>
+                </value>
+                <value>
+                    <fullName>9</fullName>
+                    <default>false</default>
+                    <label>9</label>
+                </value>
+                <value>
+                    <fullName>10</fullName>
+                    <default>false</default>
+                    <label>10</label>
+                </value>
+                <value>
+                    <fullName>11</fullName>
+                    <default>false</default>
+                    <label>11</label>
+                </value>
+                <value>
+                    <fullName>12</fullName>
+                    <default>false</default>
+                    <label>12</label>
+                </value>
+                <value>
+                    <fullName>13</fullName>
+                    <default>false</default>
+                    <label>13</label>
+                </value>
+                <value>
+                    <fullName>14</fullName>
+                    <default>false</default>
+                    <label>14</label>
+                </value>
+                <value>
+                    <fullName>15</fullName>
+                    <default>false</default>
+                    <label>15</label>
+                </value>
+                <value>
+                    <fullName>16</fullName>
+                    <default>false</default>
+                    <label>16</label>
+                </value>
+                <value>
+                    <fullName>17</fullName>
+                    <default>false</default>
+                    <label>17</label>
+                </value>
+                <value>
+                    <fullName>18</fullName>
+                    <default>false</default>
+                    <label>18</label>
+                </value>
+                <value>
+                    <fullName>19</fullName>
+                    <default>false</default>
+                    <label>19</label>
+                </value>
+                <value>
+                    <fullName>20</fullName>
+                    <default>false</default>
+                    <label>20</label>
+                </value>
+                <value>
+                    <fullName>21</fullName>
+                    <default>false</default>
+                    <label>21</label>
+                </value>
+                <value>
+                    <fullName>22</fullName>
+                    <default>false</default>
+                    <label>22</label>
+                </value>
+                <value>
+                    <fullName>23</fullName>
+                    <default>false</default>
+                    <label>23</label>
+                </value>
+                <value>
+                    <fullName>24</fullName>
+                    <default>false</default>
+                    <label>24</label>
+                </value>
+                <value>
+                    <fullName>25</fullName>
+                    <default>false</default>
+                    <label>25</label>
+                </value>
+                <value>
+                    <fullName>26</fullName>
+                    <default>false</default>
+                    <label>26</label>
+                </value>
+                <value>
+                    <fullName>27</fullName>
+                    <default>false</default>
+                    <label>27</label>
+                </value>
+                <value>
+                    <fullName>28</fullName>
+                    <default>false</default>
+                    <label>28</label>
+                </value>
+                <value>
+                    <fullName>29</fullName>
+                    <default>false</default>
+                    <label>29</label>
+                </value>
+                <value>
+                    <fullName>30</fullName>
+                    <default>false</default>
+                    <label>30</label>
+                </value>
+                <value>
+                    <fullName>31</fullName>
+                    <default>false</default>
+                    <label>31</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Legal_Entity_Date_of_Birth_Month__c</fullName>
+        <externalId>false</externalId>
+        <label>Legal Entity Date of Birth Month</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>-</fullName>
+                    <default>true</default>
+                    <label>-</label>
+                </value>
+                <value>
+                    <fullName>1</fullName>
+                    <default>false</default>
+                    <label>1</label>
+                </value>
+                <value>
+                    <fullName>2</fullName>
+                    <default>false</default>
+                    <label>2</label>
+                </value>
+                <value>
+                    <fullName>3</fullName>
+                    <default>false</default>
+                    <label>3</label>
+                </value>
+                <value>
+                    <fullName>4</fullName>
+                    <default>false</default>
+                    <label>4</label>
+                </value>
+                <value>
+                    <fullName>5</fullName>
+                    <default>false</default>
+                    <label>5</label>
+                </value>
+                <value>
+                    <fullName>6</fullName>
+                    <default>false</default>
+                    <label>6</label>
+                </value>
+                <value>
+                    <fullName>7</fullName>
+                    <default>false</default>
+                    <label>7</label>
+                </value>
+                <value>
+                    <fullName>8</fullName>
+                    <default>false</default>
+                    <label>8</label>
+                </value>
+                <value>
+                    <fullName>9</fullName>
+                    <default>false</default>
+                    <label>9</label>
+                </value>
+                <value>
+                    <fullName>10</fullName>
+                    <default>false</default>
+                    <label>10</label>
+                </value>
+                <value>
+                    <fullName>11</fullName>
+                    <default>false</default>
+                    <label>11</label>
+                </value>
+                <value>
+                    <fullName>12</fullName>
+                    <default>false</default>
+                    <label>12</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Legal_Entity_Date_of_Birth_Year__c</fullName>
+        <externalId>false</externalId>
+        <label>Legal Entity Date of Birth Year</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>2016</fullName>
+                    <default>false</default>
+                    <label>2016</label>
+                </value>
+                <value>
+                    <fullName>2015</fullName>
+                    <default>false</default>
+                    <label>2015</label>
+                </value>
+                <value>
+                    <fullName>2014</fullName>
+                    <default>false</default>
+                    <label>2014</label>
+                </value>
+                <value>
+                    <fullName>2013</fullName>
+                    <default>false</default>
+                    <label>2013</label>
+                </value>
+                <value>
+                    <fullName>2012</fullName>
+                    <default>false</default>
+                    <label>2012</label>
+                </value>
+                <value>
+                    <fullName>2011</fullName>
+                    <default>false</default>
+                    <label>2011</label>
+                </value>
+                <value>
+                    <fullName>2010</fullName>
+                    <default>false</default>
+                    <label>2010</label>
+                </value>
+                <value>
+                    <fullName>2009</fullName>
+                    <default>false</default>
+                    <label>2009</label>
+                </value>
+                <value>
+                    <fullName>2008</fullName>
+                    <default>false</default>
+                    <label>2008</label>
+                </value>
+                <value>
+                    <fullName>2007</fullName>
+                    <default>false</default>
+                    <label>2007</label>
+                </value>
+                <value>
+                    <fullName>2006</fullName>
+                    <default>false</default>
+                    <label>2006</label>
+                </value>
+                <value>
+                    <fullName>2005</fullName>
+                    <default>false</default>
+                    <label>2005</label>
+                </value>
+                <value>
+                    <fullName>2004</fullName>
+                    <default>false</default>
+                    <label>2004</label>
+                </value>
+                <value>
+                    <fullName>2003</fullName>
+                    <default>false</default>
+                    <label>2003</label>
+                </value>
+                <value>
+                    <fullName>2002</fullName>
+                    <default>false</default>
+                    <label>2002</label>
+                </value>
+                <value>
+                    <fullName>2001</fullName>
+                    <default>false</default>
+                    <label>2001</label>
+                </value>
+                <value>
+                    <fullName>2000</fullName>
+                    <default>false</default>
+                    <label>2000</label>
+                </value>
+                <value>
+                    <fullName>1999</fullName>
+                    <default>false</default>
+                    <label>1999</label>
+                </value>
+                <value>
+                    <fullName>1998</fullName>
+                    <default>false</default>
+                    <label>1998</label>
+                </value>
+                <value>
+                    <fullName>1997</fullName>
+                    <default>false</default>
+                    <label>1997</label>
+                </value>
+                <value>
+                    <fullName>1996</fullName>
+                    <default>false</default>
+                    <label>1996</label>
+                </value>
+                <value>
+                    <fullName>1995</fullName>
+                    <default>false</default>
+                    <label>1995</label>
+                </value>
+                <value>
+                    <fullName>1994</fullName>
+                    <default>false</default>
+                    <label>1994</label>
+                </value>
+                <value>
+                    <fullName>1993</fullName>
+                    <default>false</default>
+                    <label>1993</label>
+                </value>
+                <value>
+                    <fullName>1992</fullName>
+                    <default>false</default>
+                    <label>1992</label>
+                </value>
+                <value>
+                    <fullName>1991</fullName>
+                    <default>false</default>
+                    <label>1991</label>
+                </value>
+                <value>
+                    <fullName>1990</fullName>
+                    <default>false</default>
+                    <label>1990</label>
+                </value>
+                <value>
+                    <fullName>1989</fullName>
+                    <default>false</default>
+                    <label>1989</label>
+                </value>
+                <value>
+                    <fullName>1988</fullName>
+                    <default>false</default>
+                    <label>1988</label>
+                </value>
+                <value>
+                    <fullName>1987</fullName>
+                    <default>false</default>
+                    <label>1987</label>
+                </value>
+                <value>
+                    <fullName>1986</fullName>
+                    <default>false</default>
+                    <label>1986</label>
+                </value>
+                <value>
+                    <fullName>1985</fullName>
+                    <default>false</default>
+                    <label>1985</label>
+                </value>
+                <value>
+                    <fullName>1984</fullName>
+                    <default>false</default>
+                    <label>1984</label>
+                </value>
+                <value>
+                    <fullName>1983</fullName>
+                    <default>false</default>
+                    <label>1983</label>
+                </value>
+                <value>
+                    <fullName>1982</fullName>
+                    <default>false</default>
+                    <label>1982</label>
+                </value>
+                <value>
+                    <fullName>1981</fullName>
+                    <default>false</default>
+                    <label>1981</label>
+                </value>
+                <value>
+                    <fullName>1980</fullName>
+                    <default>false</default>
+                    <label>1980</label>
+                </value>
+                <value>
+                    <fullName>1979</fullName>
+                    <default>false</default>
+                    <label>1979</label>
+                </value>
+                <value>
+                    <fullName>1978</fullName>
+                    <default>false</default>
+                    <label>1978</label>
+                </value>
+                <value>
+                    <fullName>1977</fullName>
+                    <default>false</default>
+                    <label>1977</label>
+                </value>
+                <value>
+                    <fullName>1976</fullName>
+                    <default>false</default>
+                    <label>1976</label>
+                </value>
+                <value>
+                    <fullName>1975</fullName>
+                    <default>false</default>
+                    <label>1975</label>
+                </value>
+                <value>
+                    <fullName>1974</fullName>
+                    <default>false</default>
+                    <label>1974</label>
+                </value>
+                <value>
+                    <fullName>1973</fullName>
+                    <default>false</default>
+                    <label>1973</label>
+                </value>
+                <value>
+                    <fullName>1972</fullName>
+                    <default>false</default>
+                    <label>1972</label>
+                </value>
+                <value>
+                    <fullName>1971</fullName>
+                    <default>false</default>
+                    <label>1971</label>
+                </value>
+                <value>
+                    <fullName>1970</fullName>
+                    <default>false</default>
+                    <label>1970</label>
+                </value>
+                <value>
+                    <fullName>1969</fullName>
+                    <default>false</default>
+                    <label>1969</label>
+                </value>
+                <value>
+                    <fullName>1968</fullName>
+                    <default>false</default>
+                    <label>1968</label>
+                </value>
+                <value>
+                    <fullName>1967</fullName>
+                    <default>false</default>
+                    <label>1967</label>
+                </value>
+                <value>
+                    <fullName>1966</fullName>
+                    <default>false</default>
+                    <label>1966</label>
+                </value>
+                <value>
+                    <fullName>1965</fullName>
+                    <default>false</default>
+                    <label>1965</label>
+                </value>
+                <value>
+                    <fullName>1964</fullName>
+                    <default>false</default>
+                    <label>1964</label>
+                </value>
+                <value>
+                    <fullName>1963</fullName>
+                    <default>false</default>
+                    <label>1963</label>
+                </value>
+                <value>
+                    <fullName>1962</fullName>
+                    <default>false</default>
+                    <label>1962</label>
+                </value>
+                <value>
+                    <fullName>1961</fullName>
+                    <default>false</default>
+                    <label>1961</label>
+                </value>
+                <value>
+                    <fullName>1960</fullName>
+                    <default>false</default>
+                    <label>1960</label>
+                </value>
+                <value>
+                    <fullName>1959</fullName>
+                    <default>false</default>
+                    <label>1959</label>
+                </value>
+                <value>
+                    <fullName>1958</fullName>
+                    <default>false</default>
+                    <label>1958</label>
+                </value>
+                <value>
+                    <fullName>1957</fullName>
+                    <default>false</default>
+                    <label>1957</label>
+                </value>
+                <value>
+                    <fullName>1956</fullName>
+                    <default>false</default>
+                    <label>1956</label>
+                </value>
+                <value>
+                    <fullName>1955</fullName>
+                    <default>false</default>
+                    <label>1955</label>
+                </value>
+                <value>
+                    <fullName>1954</fullName>
+                    <default>false</default>
+                    <label>1954</label>
+                </value>
+                <value>
+                    <fullName>1953</fullName>
+                    <default>false</default>
+                    <label>1953</label>
+                </value>
+                <value>
+                    <fullName>1952</fullName>
+                    <default>false</default>
+                    <label>1952</label>
+                </value>
+                <value>
+                    <fullName>1951</fullName>
+                    <default>false</default>
+                    <label>1951</label>
+                </value>
+                <value>
+                    <fullName>1950</fullName>
+                    <default>false</default>
+                    <label>1950</label>
+                </value>
+                <value>
+                    <fullName>1949</fullName>
+                    <default>false</default>
+                    <label>1949</label>
+                </value>
+                <value>
+                    <fullName>1948</fullName>
+                    <default>false</default>
+                    <label>1948</label>
+                </value>
+                <value>
+                    <fullName>1947</fullName>
+                    <default>false</default>
+                    <label>1947</label>
+                </value>
+                <value>
+                    <fullName>1946</fullName>
+                    <default>false</default>
+                    <label>1946</label>
+                </value>
+                <value>
+                    <fullName>1945</fullName>
+                    <default>false</default>
+                    <label>1945</label>
+                </value>
+                <value>
+                    <fullName>1944</fullName>
+                    <default>false</default>
+                    <label>1944</label>
+                </value>
+                <value>
+                    <fullName>1943</fullName>
+                    <default>false</default>
+                    <label>1943</label>
+                </value>
+                <value>
+                    <fullName>1942</fullName>
+                    <default>false</default>
+                    <label>1942</label>
+                </value>
+                <value>
+                    <fullName>1941</fullName>
+                    <default>false</default>
+                    <label>1941</label>
+                </value>
+                <value>
+                    <fullName>1940</fullName>
+                    <default>false</default>
+                    <label>1940</label>
+                </value>
+                <value>
+                    <fullName>1939</fullName>
+                    <default>false</default>
+                    <label>1939</label>
+                </value>
+                <value>
+                    <fullName>1938</fullName>
+                    <default>false</default>
+                    <label>1938</label>
+                </value>
+                <value>
+                    <fullName>1937</fullName>
+                    <default>false</default>
+                    <label>1937</label>
+                </value>
+                <value>
+                    <fullName>1936</fullName>
+                    <default>false</default>
+                    <label>1936</label>
+                </value>
+                <value>
+                    <fullName>1935</fullName>
+                    <default>false</default>
+                    <label>1935</label>
+                </value>
+                <value>
+                    <fullName>1934</fullName>
+                    <default>false</default>
+                    <label>1934</label>
+                </value>
+                <value>
+                    <fullName>1933</fullName>
+                    <default>false</default>
+                    <label>1933</label>
+                </value>
+                <value>
+                    <fullName>1932</fullName>
+                    <default>false</default>
+                    <label>1932</label>
+                </value>
+                <value>
+                    <fullName>1931</fullName>
+                    <default>false</default>
+                    <label>1931</label>
+                </value>
+                <value>
+                    <fullName>1930</fullName>
+                    <default>false</default>
+                    <label>1930</label>
+                </value>
+                <value>
+                    <fullName>1929</fullName>
+                    <default>false</default>
+                    <label>1929</label>
+                </value>
+                <value>
+                    <fullName>1928</fullName>
+                    <default>false</default>
+                    <label>1928</label>
+                </value>
+                <value>
+                    <fullName>1927</fullName>
+                    <default>false</default>
+                    <label>1927</label>
+                </value>
+                <value>
+                    <fullName>1926</fullName>
+                    <default>false</default>
+                    <label>1926</label>
+                </value>
+                <value>
+                    <fullName>1925</fullName>
+                    <default>false</default>
+                    <label>1925</label>
+                </value>
+                <value>
+                    <fullName>1924</fullName>
+                    <default>false</default>
+                    <label>1924</label>
+                </value>
+                <value>
+                    <fullName>1923</fullName>
+                    <default>false</default>
+                    <label>1923</label>
+                </value>
+                <value>
+                    <fullName>1922</fullName>
+                    <default>false</default>
+                    <label>1922</label>
+                </value>
+                <value>
+                    <fullName>1921</fullName>
+                    <default>false</default>
+                    <label>1921</label>
+                </value>
+                <value>
+                    <fullName>1920</fullName>
+                    <default>false</default>
+                    <label>1920</label>
+                </value>
+                <value>
+                    <fullName>1919</fullName>
+                    <default>false</default>
+                    <label>1919</label>
+                </value>
+                <value>
+                    <fullName>1918</fullName>
+                    <default>false</default>
+                    <label>1918</label>
+                </value>
+                <value>
+                    <fullName>1917</fullName>
+                    <default>false</default>
+                    <label>1917</label>
+                </value>
+                <value>
+                    <fullName>1916</fullName>
+                    <default>false</default>
+                    <label>1916</label>
+                </value>
+                <value>
+                    <fullName>1915</fullName>
+                    <default>false</default>
+                    <label>1915</label>
+                </value>
+                <value>
+                    <fullName>1914</fullName>
+                    <default>false</default>
+                    <label>1914</label>
+                </value>
+                <value>
+                    <fullName>1913</fullName>
+                    <default>false</default>
+                    <label>1913</label>
+                </value>
+                <value>
+                    <fullName>1912</fullName>
+                    <default>false</default>
+                    <label>1912</label>
+                </value>
+                <value>
+                    <fullName>1911</fullName>
+                    <default>false</default>
+                    <label>1911</label>
+                </value>
+                <value>
+                    <fullName>1910</fullName>
+                    <default>false</default>
+                    <label>1910</label>
+                </value>
+                <value>
+                    <fullName>1909</fullName>
+                    <default>false</default>
+                    <label>1909</label>
+                </value>
+                <value>
+                    <fullName>1908</fullName>
+                    <default>false</default>
+                    <label>1908</label>
+                </value>
+                <value>
+                    <fullName>1907</fullName>
+                    <default>false</default>
+                    <label>1907</label>
+                </value>
+                <value>
+                    <fullName>1906</fullName>
+                    <default>false</default>
+                    <label>1906</label>
+                </value>
+                <value>
+                    <fullName>1905</fullName>
+                    <default>false</default>
+                    <label>1905</label>
+                </value>
+                <value>
+                    <fullName>1904</fullName>
+                    <default>false</default>
+                    <label>1904</label>
+                </value>
+                <value>
+                    <fullName>1903</fullName>
+                    <default>false</default>
+                    <label>1903</label>
+                </value>
+                <value>
+                    <fullName>1902</fullName>
+                    <default>false</default>
+                    <label>1902</label>
+                </value>
+                <value>
+                    <fullName>1901</fullName>
+                    <default>false</default>
+                    <label>1901</label>
+                </value>
+                <value>
+                    <fullName>1900</fullName>
+                    <default>false</default>
+                    <label>1900</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Legal_Entity_First_Name__c</fullName>
+        <externalId>false</externalId>
+        <label>Legal Entity First Name</label>
+        <length>80</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Legal_Entity_Last_Name__c</fullName>
+        <externalId>false</externalId>
+        <label>Legal Entity Last Name</label>
+        <length>80</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Legal_Entity_Postal_Code__c</fullName>
+        <externalId>false</externalId>
+        <label>Legal Entity Postal Code</label>
+        <length>20</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Legal_Entity_State__c</fullName>
+        <externalId>false</externalId>
+        <label>Legal Entity State</label>
+        <length>80</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Legal_Entity_Type__c</fullName>
+        <externalId>false</externalId>
+        <label>Legal Entity Type</label>
+        <length>80</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Mobile_Customer_Notification_Token__c</fullName>
+        <externalId>false</externalId>
+        <label>Mobile Customer Notification Token</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Monetary_Score_Brand__c</fullName>
+        <defaultValue>0</defaultValue>
+        <externalId>false</externalId>
+        <label>Monetary Score Brand</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Monetary_Score__c</fullName>
+        <defaultValue>0</defaultValue>
+        <externalId>false</externalId>
+        <label>Monetary Score</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>NewEmail__c</fullName>
+        <externalId>false</externalId>
+        <label>NewEmail</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Email</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Notification_Token__c</fullName>
+        <externalId>false</externalId>
+        <label>Web Notification Token</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Number_Of_Zero_Balance_Orders__c</fullName>
+        <defaultValue>0</defaultValue>
+        <externalId>false</externalId>
+        <label>Transaction Frequency</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Number_of_Orders__c</fullName>
+        <defaultValue>0</defaultValue>
+        <externalId>false</externalId>
+        <label>Number of Orders</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Number_of_Same_Product_Purchased__c</fullName>
+        <externalId>false</externalId>
+        <label>Number of Same Product Purchased</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Orders_Failed__c</fullName>
+        <defaultValue>0</defaultValue>
+        <description>The number of sequential failed orders</description>
+        <externalId>false</externalId>
+        <label>Orders Failed</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Pending_Balance__c</fullName>
+        <externalId>false</externalId>
+        <label>Pending Balance</label>
+        <precision>17</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Pricebook_Eligibility__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF(
+RFM_Score_Number__c &gt; 444, &apos;Gold&apos;,
+ IF(RFM_Score_Number__c &lt;= 444 &amp;&amp; CreatedDate &lt; NOW() - 90, &apos;Bronze&apos;,
+  IF(Wholesaler__c, &apos;Wholesaler&apos;,
+  &apos;Normal&apos;))
+)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Pricebook Eligibility</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Primary_Email_Interest_Area__c</fullName>
+        <externalId>false</externalId>
+        <label>Primary Email Interest Area</label>
+        <length>80</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>RFM_BNA__c</fullName>
+        <externalId>false</externalId>
+        <formula>CASE(
+    Recency_Score__c,
+    5, &quot;X-SELL, UP-SELL, PROMOTIONAL&quot;,
+    4, &quot;DISCOUNT PROMOTION CAMPAIGN&quot;,
+    3, &quot;RETENTION CAMPAIGN&quot;,
+    2, &quot;REACTIVATION CAMPAIGN&quot;,
+    1, &quot;DEEP DISCOUNT REACTIVATION CAMPAIGN&quot;,
+    &quot;&quot;
+)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Best Next Action</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>RFM_CSAT_Brand__c</fullName>
+        <externalId>false</externalId>
+        <formula>CASE(
+    Recency_Score_Brand__c,
+    5, &quot;ACTIVE CUSTOMER&quot;,
+    4, &quot;DISENGAGING CUSTOMER&quot;,
+    3, &quot;AT RISK CUSTOMER&quot;,
+    2, &quot;CHURNING CUSTOMER&quot;,
+    1, &quot;LOST CUSTOMER&quot;,
+    &quot;&quot;
+)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Customer Survival Analysis Type Brand</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>RFM_CSAT__c</fullName>
+        <externalId>false</externalId>
+        <formula>CASE(
+    Recency_Score__c,
+    5, &quot;ACTIVE CUSTOMER&quot;,
+    4, &quot;DISENGAGING CUSTOMER&quot;,
+    3, &quot;AT RISK CUSTOMER&quot;,
+    2, &quot;CHURNING CUSTOMER&quot;,
+    1, &quot;LOST CUSTOMER&quot;,
+    &quot;&quot;
+)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Customer Survival Analysis Type</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>RFM_CVL_Brand__c</fullName>
+        <externalId>false</externalId>
+        <formula>CASE(
+	Recency_Score_Brand__c,
+	5, CASE(
+		Frequency_Score_Brand__c,
+		5, CASE(
+			Monetary_Score_Brand__c,
+			5, &quot;BEST&quot;,
+			4, &quot;BEST&quot;,
+			3, &quot;GREAT&quot;,
+			2, &quot;GREAT&quot;,
+			1, &quot;GOOD&quot;,
+			&quot;&quot;
+		),
+		4, CASE(
+			Monetary_Score_Brand__c,
+			5, &quot;BEST&quot;,
+			4, &quot;BEST&quot;,
+			3, &quot;GREAT&quot;,
+			2, &quot;GREAT&quot;,
+			1, &quot;GOOD&quot;,
+			&quot;&quot;
+		),
+		3, CASE(
+			Monetary_Score_Brand__c,
+			5, &quot;GREAT&quot;,
+			4, &quot;GREAT&quot;,
+			3, &quot;GREAT&quot;,
+			2, &quot;GOOD&quot;,
+			1, &quot;GOOD&quot;,
+			&quot;&quot;
+		),
+		2, CASE(
+			Monetary_Score_Brand__c,
+			5, &quot;GREAT&quot;,
+			4, &quot;GOOD&quot;,
+			3, &quot;GOOD&quot;,
+			2, &quot;OK&quot;,
+			1, &quot;OK&quot;,
+			&quot;&quot;
+		),
+		1, CASE(
+			Monetary_Score_Brand__c,
+			5, &quot;GOOD&quot;,
+			4, &quot;GOOD&quot;,
+			3, &quot;OK&quot;,
+			2, &quot;OK&quot;,
+			1, &quot;LOW&quot;,
+			&quot;&quot;
+		 ),
+			&quot;&quot;
+	),
+	4, CASE(
+		Frequency_Score_Brand__c,
+		5, CASE(
+			Monetary_Score_Brand__c,
+			5, &quot;BEST&quot;,
+			4, &quot;GREAT&quot;,
+			3, &quot;GOOD&quot;,
+			2, &quot;GOOD&quot;,
+			1, &quot;OK&quot;,
+			&quot;&quot;
+		),
+		4, CASE(
+			Monetary_Score_Brand__c,
+			5, &quot;GREAT&quot;,
+			4, &quot;GREAT&quot;,
+			3, &quot;GOOD&quot;,
+			2, &quot;OK&quot;,
+			1, &quot;OK&quot;,
+			&quot;&quot;
+		),
+		3, CASE(
+			Monetary_Score_Brand__c,
+			5, &quot;GOOD&quot;,
+			4, &quot;GOOD&quot;,
+			3, &quot;GOOD&quot;,
+			2, &quot;OK&quot;,
+			1, &quot;OK&quot;,
+			&quot;&quot;
+		),
+		2, CASE(
+			Monetary_Score_Brand__c,
+			5, &quot;OK&quot;,
+			4, &quot;OK&quot;,
+			3, &quot;OK&quot;,
+			2, &quot;OK&quot;,
+			1, &quot;LOW&quot;,
+			&quot;&quot;
+		),
+		1, CASE(
+			Monetary_Score_Brand__c,
+			5, &quot;OK&quot;,
+			4, &quot;OK&quot;,
+			3, &quot;OK&quot;,
+			2, &quot;LOW&quot;,
+			1, &quot;LOW&quot;,
+			&quot;&quot;
+		),
+		&quot;&quot;
+	),
+	3, CASE(
+		Frequency_Score_Brand__c,
+		5, CASE(
+			Monetary_Score_Brand__c,
+			5, &quot;GREAT&quot;,
+			4, &quot;GOOD&quot;,
+			3, &quot;OK&quot;,
+			2, &quot;OK&quot;,
+			1, &quot;OK&quot;,
+			&quot;&quot;
+		),
+		4, CASE(
+			Monetary_Score_Brand__c,
+			5, &quot;GOOD&quot;,
+			4, &quot;GOOD&quot;,
+			3, &quot;OK&quot;,
+			2, &quot;OK&quot;,
+			1, &quot;LOW&quot;,
+			&quot;&quot;
+		),
+		3, CASE(
+			Monetary_Score_Brand__c,
+			5, &quot;OK&quot;,
+			4, &quot;OK&quot;,
+			3, &quot;OK&quot;,
+			2, &quot;LOW&quot;,
+			1, &quot;LOW&quot;,
+			&quot;&quot;
+		),
+		2, CASE(
+			Monetary_Score_Brand__c,
+			5, &quot;OK&quot;,
+			4, &quot;OK&quot;,
+			3, &quot;LOW&quot;,
+			2, &quot;LOW&quot;,
+			1, &quot;LOW&quot;,
+			&quot;&quot;
+		),
+		1, CASE(
+			Monetary_Score_Brand__c,
+			5, &quot;OK&quot;,
+			4, &quot;LOW&quot;,
+			3, &quot;LOW&quot;,
+			2, &quot;LOW&quot;,
+			1, &quot;LOW&quot;,
+			&quot;&quot;
+		),
+		&quot;&quot;
+	 ),
+	2, CASE(
+		Frequency_Score_Brand__c,
+		5, CASE(
+			Monetary_Score_Brand__c,
+				5, &quot;GOOD&quot;,
+				4, &quot;OK&quot;,
+				3, &quot;OK&quot;,
+				2, &quot;LOW&quot;,
+				1, &quot;LOW&quot;,
+				&quot;&quot;
+		),
+		4, CASE(
+			Monetary_Score_Brand__c,
+			5, &quot;OK&quot;,
+			4, &quot;OK&quot;,
+			3, &quot;OK&quot;,
+			2, &quot;LOW&quot;,
+			1, &quot;LOW&quot;,
+			&quot;&quot;
+		),
+		3, CASE(
+			Monetary_Score_Brand__c,
+			5, &quot;OK&quot;,
+			4, &quot;OK&quot;,
+			3, &quot;OK&quot;,
+			2, &quot;LOW&quot;,
+			1, &quot;LOW&quot;,
+			&quot;&quot;
+		),
+		2, CASE(
+			Monetary_Score_Brand__c,
+			5, &quot;LOW&quot;,
+			4, &quot;LOW&quot;,
+			3, &quot;LOW&quot;,
+			2, &quot;LOW&quot;,
+			1, &quot;LOST&quot;,
+			&quot;&quot;
+		),
+		1, CASE(
+			Monetary_Score_Brand__c,
+			5, &quot;LOW&quot;,
+			4, &quot;LOW&quot;,
+			3, &quot;LOW&quot;,
+			2, &quot;LOST&quot;,
+			1, &quot;LOST&quot;,
+			&quot;&quot;
+		),
+		&quot;&quot;
+	),
+	1, CASE(
+		Frequency_Score_Brand__c,
+		5, CASE(
+			Monetary_Score_Brand__c,
+			5, &quot;LOST&quot;,
+			4, &quot;LOST&quot;,
+			3, &quot;LOST&quot;,
+			2, &quot;LOST&quot;,
+			1, &quot;LOST&quot;,
+			&quot;&quot;
+		),
+		4, CASE(
+			Monetary_Score_Brand__c,
+			5, &quot;LOST&quot;,
+			4, &quot;LOST&quot;,
+			3, &quot;LOST&quot;,
+			2, &quot;LOST&quot;,
+			1, &quot;LOST&quot;,
+			&quot;&quot;
+		),
+		3, CASE(
+			Monetary_Score_Brand__c,
+			5, &quot;LOST&quot;,
+			4, &quot;LOST&quot;,
+			3, &quot;LOST&quot;,
+			2, &quot;LOST&quot;,
+			1, &quot;LOST&quot;,
+			&quot;&quot;
+		),
+		2, CASE(
+			Monetary_Score_Brand__c,
+			5, &quot;LOST&quot;,
+			4, &quot;LOST&quot;,
+			3, &quot;LOST&quot;,
+			2, &quot;LOST&quot;,
+			1, &quot;LOST&quot;,
+			&quot;&quot;
+		),
+		1, CASE(
+			Monetary_Score_Brand__c,
+			5, &quot;LOST&quot;,
+			4, &quot;LOST&quot;,
+			3, &quot;LOST&quot;,
+			2, &quot;LOST&quot;,
+			1, &quot;LOST&quot;,
+			&quot;&quot;
+		),
+		&quot;&quot;
+	),
+	&quot;&quot;
+)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Customer Value Label Brand</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>RFM_CVL__c</fullName>
+        <externalId>false</externalId>
+        <formula>CASE(
+	Recency_Score__c,
+	5, CASE(
+		Frequency_Score__c,
+		5, CASE(
+			Monetary_Score__c,
+			5, &quot;BEST&quot;,
+			4, &quot;BEST&quot;,
+			3, &quot;GREAT&quot;,
+			2, &quot;GREAT&quot;,
+			1, &quot;GOOD&quot;,
+			&quot;&quot;
+		),
+		4, CASE(
+			Monetary_Score__c,
+			5, &quot;BEST&quot;,
+			4, &quot;BEST&quot;,
+			3, &quot;GREAT&quot;,
+			2, &quot;GREAT&quot;,
+			1, &quot;GOOD&quot;,
+			&quot;&quot;
+		),
+		3, CASE(
+			Monetary_Score__c,
+			5, &quot;GREAT&quot;,
+			4, &quot;GREAT&quot;,
+			3, &quot;GREAT&quot;,
+			2, &quot;GOOD&quot;,
+			1, &quot;GOOD&quot;,
+			&quot;&quot;
+		),
+		2, CASE(
+			Monetary_Score__c,
+			5, &quot;GREAT&quot;,
+			4, &quot;GOOD&quot;,
+			3, &quot;GOOD&quot;,
+			2, &quot;OK&quot;,
+			1, &quot;OK&quot;,
+			&quot;&quot;
+		),
+		1, CASE(
+			Monetary_Score__c,
+			5, &quot;GOOD&quot;,
+			4, &quot;GOOD&quot;,
+			3, &quot;OK&quot;,
+			2, &quot;OK&quot;,
+			1, &quot;LOW&quot;,
+			&quot;&quot;
+		 ),
+			&quot;&quot;
+	),
+	4, CASE(
+		Frequency_Score__c,
+		5, CASE(
+			Monetary_Score__c,
+			5, &quot;BEST&quot;,
+			4, &quot;GREAT&quot;,
+			3, &quot;GOOD&quot;,
+			2, &quot;GOOD&quot;,
+			1, &quot;OK&quot;,
+			&quot;&quot;
+		),
+		4, CASE(
+			Monetary_Score__c,
+			5, &quot;GREAT&quot;,
+			4, &quot;GREAT&quot;,
+			3, &quot;GOOD&quot;,
+			2, &quot;OK&quot;,
+			1, &quot;OK&quot;,
+			&quot;&quot;
+		),
+		3, CASE(
+			Monetary_Score__c,
+			5, &quot;GOOD&quot;,
+			4, &quot;GOOD&quot;,
+			3, &quot;GOOD&quot;,
+			2, &quot;OK&quot;,
+			1, &quot;OK&quot;,
+			&quot;&quot;
+		),
+		2, CASE(
+			Monetary_Score__c,
+			5, &quot;OK&quot;,
+			4, &quot;OK&quot;,
+			3, &quot;OK&quot;,
+			2, &quot;OK&quot;,
+			1, &quot;LOW&quot;,
+			&quot;&quot;
+		),
+		1, CASE(
+			Monetary_Score__c,
+			5, &quot;OK&quot;,
+			4, &quot;OK&quot;,
+			3, &quot;OK&quot;,
+			2, &quot;LOW&quot;,
+			1, &quot;LOW&quot;,
+			&quot;&quot;
+		),
+		&quot;&quot;
+	),
+	3, CASE(
+		Frequency_Score__c,
+		5, CASE(
+			Monetary_Score__c,
+			5, &quot;GREAT&quot;,
+			4, &quot;GOOD&quot;,
+			3, &quot;OK&quot;,
+			2, &quot;OK&quot;,
+			1, &quot;OK&quot;,
+			&quot;&quot;
+		),
+		4, CASE(
+			Monetary_Score__c,
+			5, &quot;GOOD&quot;,
+			4, &quot;GOOD&quot;,
+			3, &quot;OK&quot;,
+			2, &quot;OK&quot;,
+			1, &quot;LOW&quot;,
+			&quot;&quot;
+		),
+		3, CASE(
+			Monetary_Score__c,
+			5, &quot;OK&quot;,
+			4, &quot;OK&quot;,
+			3, &quot;OK&quot;,
+			2, &quot;LOW&quot;,
+			1, &quot;LOW&quot;,
+			&quot;&quot;
+		),
+		2, CASE(
+			Monetary_Score__c,
+			5, &quot;OK&quot;,
+			4, &quot;OK&quot;,
+			3, &quot;LOW&quot;,
+			2, &quot;LOW&quot;,
+			1, &quot;LOW&quot;,
+			&quot;&quot;
+		),
+		1, CASE(
+			Monetary_Score__c,
+			5, &quot;OK&quot;,
+			4, &quot;LOW&quot;,
+			3, &quot;LOW&quot;,
+			2, &quot;LOW&quot;,
+			1, &quot;LOW&quot;,
+			&quot;&quot;
+		),
+		&quot;&quot;
+	 ),
+	2, CASE(
+		Frequency_Score__c,
+		5, CASE(
+			Monetary_Score__c,
+				5, &quot;GOOD&quot;,
+				4, &quot;OK&quot;,
+				3, &quot;OK&quot;,
+				2, &quot;LOW&quot;,
+				1, &quot;LOW&quot;,
+				&quot;&quot;
+		),
+		4, CASE(
+			Monetary_Score__c,
+			5, &quot;OK&quot;,
+			4, &quot;OK&quot;,
+			3, &quot;OK&quot;,
+			2, &quot;LOW&quot;,
+			1, &quot;LOW&quot;,
+			&quot;&quot;
+		),
+		3, CASE(
+			Monetary_Score__c,
+			5, &quot;OK&quot;,
+			4, &quot;OK&quot;,
+			3, &quot;OK&quot;,
+			2, &quot;LOW&quot;,
+			1, &quot;LOW&quot;,
+			&quot;&quot;
+		),
+		2, CASE(
+			Monetary_Score__c,
+			5, &quot;LOW&quot;,
+			4, &quot;LOW&quot;,
+			3, &quot;LOW&quot;,
+			2, &quot;LOW&quot;,
+			1, &quot;LOST&quot;,
+			&quot;&quot;
+		),
+		1, CASE(
+			Monetary_Score__c,
+			5, &quot;LOW&quot;,
+			4, &quot;LOW&quot;,
+			3, &quot;LOW&quot;,
+			2, &quot;LOST&quot;,
+			1, &quot;LOST&quot;,
+			&quot;&quot;
+		),
+		&quot;&quot;
+	),
+	1, CASE(
+		Frequency_Score__c,
+		5, CASE(
+			Monetary_Score__c,
+			5, &quot;LOST&quot;,
+			4, &quot;LOST&quot;,
+			3, &quot;LOST&quot;,
+			2, &quot;LOST&quot;,
+			1, &quot;LOST&quot;,
+			&quot;&quot;
+		),
+		4, CASE(
+			Monetary_Score__c,
+			5, &quot;LOST&quot;,
+			4, &quot;LOST&quot;,
+			3, &quot;LOST&quot;,
+			2, &quot;LOST&quot;,
+			1, &quot;LOST&quot;,
+			&quot;&quot;
+		),
+		3, CASE(
+			Monetary_Score__c,
+			5, &quot;LOST&quot;,
+			4, &quot;LOST&quot;,
+			3, &quot;LOST&quot;,
+			2, &quot;LOST&quot;,
+			1, &quot;LOST&quot;,
+			&quot;&quot;
+		),
+		2, CASE(
+			Monetary_Score__c,
+			5, &quot;LOST&quot;,
+			4, &quot;LOST&quot;,
+			3, &quot;LOST&quot;,
+			2, &quot;LOST&quot;,
+			1, &quot;LOST&quot;,
+			&quot;&quot;
+		),
+		1, CASE(
+			Monetary_Score__c,
+			5, &quot;LOST&quot;,
+			4, &quot;LOST&quot;,
+			3, &quot;LOST&quot;,
+			2, &quot;LOST&quot;,
+			1, &quot;LOST&quot;,
+			&quot;&quot;
+		),
+		&quot;&quot;
+	),
+	&quot;&quot;
+)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Customer Value Label</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>RFM_Score_Brand_Number__c</fullName>
+        <externalId>false</externalId>
+        <formula>VALUE(RFM_Score_Brand__c)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>RFM Score Brand Number</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>RFM_Score_Brand__c</fullName>
+        <externalId>false</externalId>
+        <formula>TEXT(Recency_Score_Brand__c) + TEXT(Frequency_Score_Brand__c) + TEXT(Monetary_Score_Brand__c)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>RFM Score Brand</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>RFM_Score_Number__c</fullName>
+        <externalId>false</externalId>
+        <formula>VALUE(RFM_Score__c)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>RFM Score Number</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>RFM_Score__c</fullName>
+        <externalId>false</externalId>
+        <formula>TEXT(Recency_Score__c)  + TEXT(Frequency_Score__c) + TEXT(Monetary_Score__c)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>RFM Score</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>RFN_BNA_Brand__c</fullName>
+        <externalId>false</externalId>
+        <formula>CASE(
+    Recency_Score_Brand__c,
+    5, &quot;X-SELL, UP-SELL, PROMOTIONAL&quot;,
+    4, &quot;DISCOUNT PROMOTION CAMPAIGN&quot;,
+    3, &quot;RETENTION CAMPAIGN&quot;,
+    2, &quot;REACTIVATION CAMPAIGN&quot;,
+    1, &quot;DEEP DISCOUNT REACTIVATION CAMPAIGN&quot;,
+    &quot;&quot;
+)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Best Next Action Brand</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Recency_Score_Brand__c</fullName>
+        <defaultValue>0</defaultValue>
+        <externalId>false</externalId>
+        <label>Recency Score Brand</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Recency_Score__c</fullName>
+        <defaultValue>0</defaultValue>
+        <externalId>false</externalId>
+        <label>Recency Score</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Refund_For_Previous_Payouts__c</fullName>
+        <externalId>false</externalId>
+        <formula>(Commissions_Paid__c +  Commissions_Paid_And_Refunded__c ) - Commission_Paid_Out__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Refund For Previous Payouts</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Refund_Transactions__c</fullName>
+        <externalId>false</externalId>
+        <label>Refund Transactions</label>
+        <summarizedField>Affiliate_Offer__c.Refund_Transactions__c</summarizedField>
+        <summaryForeignKey>Affiliate_Offer__c.Account__c</summaryForeignKey>
+        <summaryOperation>sum</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>Refunds_and_Fails_Total__c</fullName>
+        <defaultValue>0</defaultValue>
+        <externalId>false</externalId>
+        <label>Refunds and Fails Total</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SSN__c</fullName>
+        <description>SSN (only for US)</description>
+        <externalId>false</externalId>
+        <inlineHelpText>SSN (only for US)</inlineHelpText>
+        <label>SSN</label>
+        <precision>9</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Social_Append_Run_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Social Append Run Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>Social_Append_Success__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Social Append Success</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Stripe_Account_API_Key__c</fullName>
+        <externalId>false</externalId>
+        <label>Stripe Account API Key</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Stripe_Account_ID__c</fullName>
+        <externalId>false</externalId>
+        <label>Stripe Account ID</label>
+        <length>80</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Stripe_Account_Type__c</fullName>
+        <externalId>false</externalId>
+        <label>Stripe Account Type</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>custom</fullName>
+                    <default>false</default>
+                    <label>custom</label>
+                </value>
+                <value>
+                    <fullName>standard</fullName>
+                    <default>false</default>
+                    <label>standard</label>
+                </value>
+                <value>
+                    <fullName>express</fullName>
+                    <default>false</default>
+                    <label>express</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Stripe_Application_Fee__c</fullName>
+        <externalId>false</externalId>
+        <label>Stripe Application Fee</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Stripe_Country_Support__c</fullName>
+        <externalId>false</externalId>
+        <label>Stripe Country Support</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>AU</fullName>
+                    <default>false</default>
+                    <label>AU</label>
+                </value>
+                <value>
+                    <fullName>US</fullName>
+                    <default>false</default>
+                    <label>US</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Subtotal_From_Zero_Balance_Orders__c</fullName>
+        <externalId>false</externalId>
+        <label>Customer Value</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Terms_Of_Service_Acceptance_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Terms Of Service Acceptance Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Terms_Of_Service_Acceptance_IP__c</fullName>
+        <externalId>false</externalId>
+        <label>Terms Of Service Acceptance IP</label>
+        <length>80</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Territory__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Territory</label>
+        <referenceTo>Territory__c</referenceTo>
+        <relationshipLabel>Accounts</relationshipLabel>
+        <relationshipName>Accounts</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Total_CPA__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>CPA from Campaign</inlineHelpText>
+        <label>Total CPA</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Total_Commissions__c</fullName>
+        <externalId>false</externalId>
+        <label>Total Commissions</label>
+        <summarizedField>Affiliate_Offer__c.Total_Commissions__c</summarizedField>
+        <summaryForeignKey>Affiliate_Offer__c.Account__c</summaryForeignKey>
+        <summaryOperation>sum</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>Total_Revenue__c</fullName>
+        <externalId>false</externalId>
+        <label>Total Revenue</label>
+        <summarizedField>Affiliate_Offer__c.Total_Revenue__c</summarizedField>
+        <summaryForeignKey>Affiliate_Offer__c.Account__c</summaryForeignKey>
+        <summaryOperation>sum</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>Total_Transactions__c</fullName>
+        <externalId>false</externalId>
+        <label>Total Transactions</label>
+        <summarizedField>Affiliate_Offer__c.Total_Transactions__c</summarizedField>
+        <summaryForeignKey>Affiliate_Offer__c.Account__c</summaryForeignKey>
+        <summaryOperation>sum</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>Van_Type__c</fullName>
+        <externalId>false</externalId>
+        <label>Van Type</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>C</fullName>
+                    <default>false</default>
+                    <label>C</label>
+                </value>
+                <value>
+                    <fullName>F</fullName>
+                    <default>false</default>
+                    <label>F</label>
+                </value>
+                <value>
+                    <fullName>H</fullName>
+                    <default>false</default>
+                    <label>H</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Wholesaler__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Wholesaler</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>landing_page_url__c</fullName>
+        <externalId>false</externalId>
+        <label>Landing Page URL</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>referral_domain_url__c</fullName>
+        <externalId>false</externalId>
+        <label>Referral Domain</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>sales_funnel_name__c</fullName>
+        <externalId>false</externalId>
+        <label>Sales Funnel</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>utm_campaign__c</fullName>
+        <externalId>false</externalId>
+        <label>utm_campaign</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>utm_content__c</fullName>
+        <externalId>false</externalId>
+        <label>utm_content</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>utm_medium__c</fullName>
+        <externalId>false</externalId>
+        <label>utm_medium</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>utm_source__c</fullName>
+        <externalId>false</externalId>
+        <label>utm_source</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>utm_term__c</fullName>
+        <externalId>false</externalId>
+        <label>utm_term</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <recordTypes>
+        <fullName>Business_Account</fullName>
+        <active>true</active>
+        <label>Business Account</label>
+        <picklistValues>
+            <picklist>AccountSource</picklist>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Affiliate_Approval__c</picklist>
+            <values>
+                <fullName>Allow to be Affiliate</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Approved</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Frozen</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Rejected</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Waiting for Approval</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Franchisee_Approval__c</picklist>
+            <values>
+                <fullName>Allow to be Franchisee</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Approved</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Frozen</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Rejected</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Waiting for Approval</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Industry</picklist>
+            <values>
+                <fullName>Agriculture</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Apparel</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Banking</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Biotechnology</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Chemicals</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Communications</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Construction</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Consulting</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Education</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Electronics</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Energy</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Engineering</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Entertainment</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Environmental</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Finance</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Food %26 Beverage</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Government</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Healthcare</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Hospitality</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Insurance</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Machinery</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Manufacturing</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Media</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Not For Profit</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Recreation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Retail</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Shipping</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Technology</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Telecommunications</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Transportation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Utilities</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Legal_Entity_Date_of_Birth_Day__c</picklist>
+            <values>
+                <fullName>-</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>1</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>10</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>11</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>12</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>13</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>14</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>15</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>16</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>17</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>18</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>19</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>2</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>20</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>21</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>22</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>23</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>24</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>25</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>26</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>27</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>28</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>3</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>30</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>31</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>4</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>5</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>6</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>7</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>8</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>9</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Legal_Entity_Date_of_Birth_Month__c</picklist>
+            <values>
+                <fullName>-</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>1</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>10</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>11</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>12</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>2</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>3</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>4</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>5</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>6</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>7</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>8</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>9</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Legal_Entity_Date_of_Birth_Year__c</picklist>
+            <values>
+                <fullName>1900</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>1901</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>1902</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>1903</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>1904</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>1905</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>1906</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>1907</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>1908</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>1909</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>1910</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>1911</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>1912</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>1913</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>1914</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>1915</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>1916</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>1917</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>1918</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>1919</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>1920</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>1921</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>1922</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>1923</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>1924</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>1925</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>1926</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>1927</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>1928</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>1929</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>1930</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>1931</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>1932</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>1933</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>1934</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>1935</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>1936</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>1937</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>1938</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>1939</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>1940</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>1941</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>1942</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>1943</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>1944</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>1945</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>1946</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>1947</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>1948</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>1949</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>1950</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>1951</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>1952</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>1953</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>1954</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>1955</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>1956</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>1957</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>1958</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>1959</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>1960</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>1961</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>1962</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>1963</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>1964</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>1965</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>1966</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>1967</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>1968</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>1969</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>1970</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>1971</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>1972</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>1973</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>1974</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>1975</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>1976</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>1977</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>1978</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>1979</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>1980</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>1981</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>1982</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>1983</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>1984</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>1985</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>1986</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>1987</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>1988</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>1989</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>1990</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>1991</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>1992</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>1993</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>1994</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>1995</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>1996</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>1997</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>1998</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>1999</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>2000</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>2001</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>2002</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>2003</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>2004</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>2005</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>2006</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>2007</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>2008</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>2009</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>2010</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>2011</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>2012</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>2013</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>2014</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>2015</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>2016</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Ownership</picklist>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Private</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Public</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Subsidiary</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Rating</picklist>
+            <values>
+                <fullName>Cold</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Hot</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Warm</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Stripe_Account_Type__c</picklist>
+            <values>
+                <fullName>custom</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>express</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>standard</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Stripe_Country_Support__c</picklist>
+            <values>
+                <fullName>AU</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>US</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Type</picklist>
+            <values>
+                <fullName>Channel Partner %2F Reseller</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Customer - Channel</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Customer - Direct</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Installation Partner</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Prospect</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Technology Partner</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Van_Type__c</picklist>
+            <values>
+                <fullName>C</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>F</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>H</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <webLinks>
+        <fullName>Approve_To_Affiliate</fullName>
+        <availability>online</availability>
+        <description>Approve convertion Account to Affiliate Account.</description>
+        <displayType>button</displayType>
+        <linkType>page</linkType>
+        <masterLabel>Approve To Affiliate</masterLabel>
+        <openType>replace</openType>
+        <page>ApproveToAffiliate</page>
+        <protected>false</protected>
+    </webLinks>
+    <webLinks>
+        <fullName>Blacklist</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <linkType>page</linkType>
+        <masterLabel>Blacklist</masterLabel>
+        <openType>replace</openType>
+        <page>AccountToBlackList</page>
+        <protected>false</protected>
+    </webLinks>
+    <webLinks>
+        <fullName>Data_Append</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <linkType>page</linkType>
+        <masterLabel>Data Append</masterLabel>
+        <openType>replace</openType>
+        <page>AccountToDataAppend</page>
+        <protected>false</protected>
+    </webLinks>
+    <webLinks>
+        <fullName>Data_Append_List</fullName>
+        <availability>online</availability>
+        <displayType>massActionButton</displayType>
+        <linkType>page</linkType>
+        <masterLabel>Data Append</masterLabel>
+        <openType>replace</openType>
+        <page>DataAppendAccountList</page>
+        <protected>false</protected>
+        <requireRowSelection>true</requireRowSelection>
+    </webLinks>
+    <webLinks>
+        <fullName>Freeze</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <linkType>page</linkType>
+        <masterLabel>Freeze</masterLabel>
+        <openType>replace</openType>
+        <page>AffiliateFreeze</page>
+        <protected>false</protected>
+    </webLinks>
+    <webLinks>
+        <fullName>New_Order</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <linkType>page</linkType>
+        <masterLabel>New Order</masterLabel>
+        <openType>replace</openType>
+        <page>NewOrderProcess</page>
+        <protected>false</protected>
+    </webLinks>
+    <webLinks>
+        <fullName>New_Order_List</fullName>
+        <availability>online</availability>
+        <displayType>massActionButton</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <linkType>url</linkType>
+        <masterLabel>New Order</masterLabel>
+        <openType>replace</openType>
+        <protected>false</protected>
+        <requireRowSelection>true</requireRowSelection>
+        <url>{!URLFOR(&apos;/apex/TouchCRBase__NewOrderProcess&apos;, null, [retURL=&apos;/&apos;+ $ObjectType.Account], false)}</url>
+    </webLinks>
+    <webLinks>
+        <fullName>UnFreeze</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <linkType>page</linkType>
+        <masterLabel>UnFreeze</masterLabel>
+        <openType>replace</openType>
+        <page>AffiliateUnFreeze</page>
+        <protected>false</protected>
+    </webLinks>
+</CustomObject>

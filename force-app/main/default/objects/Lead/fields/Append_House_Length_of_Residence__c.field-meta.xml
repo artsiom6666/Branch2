@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Append_House_Length_of_Residence__c</fullName>
+    <description>Number of years spent in the current residence. Reported as number; not range. Less than 1 year; 1 year; 2 years; 3 years; 4 years; 5 years; 6 years; 7 years; 8 years; 9 years; 10 years; 11-15 years; 16 -19 years; 20+ years</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Number of years spent in the current residence. Reported as number; not range. Less than 1 year; 1 year; 2 years; 3 years; 4 years; 5 years; 6 years; 7 years; 8 years; 9 years; 10 years; 11-15 years; 16 -19 years; 20+ years</inlineHelpText>
+    <label>Years at Current Address</label>
+    <length>255</length>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

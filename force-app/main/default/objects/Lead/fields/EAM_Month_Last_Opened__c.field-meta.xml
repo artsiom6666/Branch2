@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>EAM_Month_Last_Opened__c</fullName>
+    <description>Sourced from trusted mailing partners,
+TouchCR provides the month and year (in YYYY-MM format) we last saw the
+email “open.” Match rates typically range from 30-40% for U.S. data.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Sourced from trusted mailing partners,
+TouchCR provides the month and year (in YYYY-MM format) we last saw the
+email “open.” Match rates typically range from 30-40% for U.S. data.</inlineHelpText>
+    <label>Month Last Opened</label>
+    <length>255</length>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

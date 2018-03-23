@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Amount_To_Charge__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF( Subscription_To__c != null || Subscription_To__r.Active__c == true , IF( Subscription_To__r.Charge_Amount__c &lt;= Subscription_Remains_Amount__c  , Subscription_To__r.Charge_Amount__c, Subscription_Remains_Amount__c )  , Grand_Total_Amount__c)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Amount to Charge</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Currency</type>
+</CustomField>

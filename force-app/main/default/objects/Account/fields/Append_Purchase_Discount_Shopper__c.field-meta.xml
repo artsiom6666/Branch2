@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Append_Purchase_Discount_Shopper__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Interested in discounts when buying</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Interested in discounts when buying</inlineHelpText>
+    <label>Discount Shopper</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

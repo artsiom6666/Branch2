@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Append_Interest_Arts_Craft__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Purchases arts &amp; crafts related products</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Purchases arts &amp; crafts related products</inlineHelpText>
+    <label>Known Interest in Arts &amp; Craft</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>Checkbox</type>
+</CustomField>

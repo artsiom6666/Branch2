@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Append_Purchase_High_End_Brand_Buyer__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Has bought a premium CPG brand in the past 18 months</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Has bought a premium CPG brand in the past 18 months</inlineHelpText>
+    <label>High End Brand Buyer</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

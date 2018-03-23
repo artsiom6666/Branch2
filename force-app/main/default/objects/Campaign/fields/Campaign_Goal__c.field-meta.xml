@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Campaign_Goal__c</fullName>
+    <externalId>false</externalId>
+    <label>Campaign Goal</label>
+    <required>false</required>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Lead Generation - Cold Traffic</fullName>
+                <default>false</default>
+                <label>Lead Generation - Cold Traffic</label>
+            </value>
+            <value>
+                <fullName>Lead Generation - Warm Traffic</fullName>
+                <default>false</default>
+                <label>Lead Generation - Warm Traffic</label>
+            </value>
+            <value>
+                <fullName>Engagement</fullName>
+                <default>false</default>
+                <label>Engagement</label>
+            </value>
+            <value>
+                <fullName>Customer Acquisition - Cold Traffic</fullName>
+                <default>false</default>
+                <label>Customer Acquisition - Cold Traffic</label>
+            </value>
+            <value>
+                <fullName>Customer Acquisition - Warm Traffic</fullName>
+                <default>false</default>
+                <label>Customer Acquisition - Warm Traffic</label>
+            </value>
+            <value>
+                <fullName>Brand Building</fullName>
+                <default>false</default>
+                <label>Brand Building</label>
+            </value>
+            <value>
+                <fullName>Upsell</fullName>
+                <default>false</default>
+                <label>Upsell</label>
+            </value>
+            <value>
+                <fullName>Retention</fullName>
+                <default>false</default>
+                <label>Retention</label>
+            </value>
+            <value>
+                <fullName>Win Back</fullName>
+                <default>false</default>
+                <label>Win Back</label>
+            </value>
+            <value>
+                <fullName>Replenishment</fullName>
+                <default>false</default>
+                <label>Replenishment</label>
+            </value>
+            <value>
+                <fullName>Monetize</fullName>
+                <default>false</default>
+                <label>Monetize</label>
+            </value>
+            <value>
+                <fullName>Abandonment</fullName>
+                <default>false</default>
+                <label>Abandonment</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

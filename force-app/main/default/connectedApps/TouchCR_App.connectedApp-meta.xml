@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ConnectedApp xmlns="http://soap.sforce.com/2006/04/metadata">
+    <contactEmail>sergey.pahmurny@succraft.com</contactEmail>
+    <label>TouchCR App</label>
+    <oauthConfig>
+        <callbackUrl>https://login.salesforce.com/services/oauth2/success
+https://test.salesforce.com/services/oauth2/success
+salesforceapp://auth/success
+http://localhost:8200/oauthcallback.html
+http://localhost:8100
+http://localhost/oauthcallback
+http://localhost/callback
+http://localhost/#/callback
+http://localhost/menu/callback
+http://localhost:8200/menu/oauthcallback
+http://localhost/#/oauthcallback
+https://hic-publicwebsite-staging.herokuapp.com
+http://localhost:8200
+http://localhost:8200/#/oauthcallback
+http://localhost:8200/oauthcallback
+https://touchcr-site-staging.herokuapp.com/oauthcallback</callbackUrl>
+        <consumerKey>3MVG9szVa2RxsqBZ2FpZ87gvlDpEZNtiSCwmQr20Ud8GFWo3GJhKRkxWE1PPpkGkc9yfuKObdUhgOmx1mL5U3</consumerKey>
+        <scopes>Basic</scopes>
+        <scopes>Api</scopes>
+        <scopes>Web</scopes>
+        <scopes>Full</scopes>
+        <scopes>CustomApplications</scopes>
+        <scopes>RefreshToken</scopes>
+        <scopes>OpenID</scopes>
+    </oauthConfig>
+</ConnectedApp>

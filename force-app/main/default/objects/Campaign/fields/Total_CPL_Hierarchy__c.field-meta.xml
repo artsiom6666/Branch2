@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Total_CPL_Hierarchy__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(AND(HierarchyNumberOfContacts > 0, HierarchyNumberOfLeads > 0), HierarchyActualCost / (HierarchyNumberOfContacts + HierarchyNumberOfLeads), null)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <inlineHelpText>HierarchyActualCost / (HierarchyNumberOfContacts + HierarchyNumberOfLeads)</inlineHelpText>
+    <label>Total CPL in Hierarchy</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <type>Currency</type>
+</CustomField>

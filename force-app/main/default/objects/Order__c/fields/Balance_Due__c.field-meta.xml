@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Balance_Due__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF( Subscription_To__c != null || Subscription_To__r.Active__c == true , Payment_Amount_Attempts__c - Subscription_Approved_Charges_Amount__c , Grand_Total_Amount__c - Approved_Charges_Amount__c)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Balance Due</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Currency</type>
+</CustomField>

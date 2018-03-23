@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>RFM_BNA__c</fullName>
+    <externalId>false</externalId>
+    <formula>CASE(
+    Recency_Score__c,
+    5, "X-SELL, UP-SELL, PROMOTIONAL",
+    4, "DISCOUNT PROMOTION CAMPAIGN",
+    3, "RETENTION CAMPAIGN",
+    2, "REACTIVATION CAMPAIGN",
+    1, "DEEP DISCOUNT REACTIVATION CAMPAIGN",
+    ""
+)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Best Next Action</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

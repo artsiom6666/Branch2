@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Auto_Apply_Check</fullName>
+    <active>true</active>
+    <errorConditionFormula>Auto_Apply__c = TRUE 
+&amp;&amp; Coupon_Code__c != NULL</errorConditionFormula>
+    <errorDisplayField>Coupon_Code__c</errorDisplayField>
+    <errorMessage>"Coupon Code" must be empty for Auto-Apply coupon.</errorMessage>
+</ValidationRule>

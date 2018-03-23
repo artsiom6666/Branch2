@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Subscription_Approved_Charges_Amount__c</fullName>
+    <externalId>false</externalId>
+    <label>Subscription Approved Charges Amount</label>
+    <summarizedField>Order_Transaction__c.Amount__c</summarizedField>
+    <summaryFilterItems>
+        <field>Order_Transaction__c.Type__c</field>
+        <operation>equals</operation>
+        <value>Charge, Refund</value>
+    </summaryFilterItems>
+    <summaryFilterItems>
+        <field>Order_Transaction__c.Response_Status__c</field>
+        <operation>contains</operation>
+        <value>Approved</value>
+    </summaryFilterItems>
+    <summaryFilterItems>
+        <field>Order_Transaction__c.Subscription__c</field>
+        <operation>equals</operation>
+        <value>True</value>
+    </summaryFilterItems>
+    <summaryForeignKey>Order_Transaction__c.Order__c</summaryForeignKey>
+    <summaryOperation>sum</summaryOperation>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Summary</type>
+</CustomField>
